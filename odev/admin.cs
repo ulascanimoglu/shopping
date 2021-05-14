@@ -67,7 +67,6 @@ namespace odev
                 listView2.Items.Add(tablo.Rows[i]["id"].ToString());
                 listView2.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString());
                 listView2.Items[i].SubItems.Add(tablo.Rows[i]["KPara"].ToString());
-
             }
             baglan.Close();
         }

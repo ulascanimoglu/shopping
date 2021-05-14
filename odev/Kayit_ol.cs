@@ -19,10 +19,6 @@ namespace odev
             InitializeComponent();
         }
 
-        private void Kayit_ol_Load(object sender, EventArgs e)
-        {
-
-        }
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
 
         private void button1_Click(object sender, EventArgs e)

@@ -268,7 +268,6 @@ namespace odev
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Kayit_ol";
             this.Text = "Kayit_ol";
-            this.Load += new System.EventHandler(this.Kayit_ol_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
