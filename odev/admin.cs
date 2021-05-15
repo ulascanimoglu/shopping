@@ -26,7 +26,7 @@ namespace odev
         }
         private void goster_urun()
         {
-          
+            listView1.Items.Clear();
             baglan.Open();
             SqlCommand komut = new SqlCommand();
             komut.CommandText = "Select * From Onaylama";
@@ -50,7 +50,7 @@ namespace odev
 
         private void goster_para()
         {
-            
+            listView2.Items.Clear();
             baglan.Open();
             SqlCommand komut = new SqlCommand();
             komut.CommandText = "Select * From OnayPara";
@@ -81,6 +81,7 @@ namespace odev
                 baglan.Open();
                 com.ExecuteNonQuery();
                 baglan.Close();
+                goster_urun();
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -88,6 +89,7 @@ namespace odev
                 baglan.Open();
                 cmd.ExecuteNonQuery();
                 baglan.Close();
+                goster_urun();
             }
             
         }
@@ -102,6 +104,7 @@ namespace odev
                 baglan.Open();
                 com.ExecuteNonQuery();
                 baglan.Close();
+                goster_para();
 
             }
             else if (dialogResult == DialogResult.No)
@@ -110,9 +113,8 @@ namespace odev
                 baglan.Open();
                 cmd.ExecuteNonQuery();
                 baglan.Close();
+                goster_para();
             }
         }
-
-       
     }
 }

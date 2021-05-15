@@ -16,19 +16,15 @@ namespace odev
     {
         int id;
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
-       
+        
         public Kullanici(int id)
         {
             InitializeComponent();
             this.id=id;
         }
 
-       
-
         private void Kullanici_Load(object sender, EventArgs e)
         {
-            // TODO: Bu kod satırı 'sqlyazilimyapimiDataSet.alisveris' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            // this.alisverisTableAdapter.Fill(this.sqlyazilimyapimiDataSet.alisveris);
             listeGoster();
         }
 
@@ -36,19 +32,18 @@ namespace odev
         {
             baglan.Open();
             SqlCommand komut = new SqlCommand();
-            komut.CommandText = "Select * From Satis";
+            komut.CommandText = "Select * From Satis where Stok>0";
             komut.Connection = baglan;
-
 
             SqlDataAdapter adap = new SqlDataAdapter(komut);
             DataTable tablo = new DataTable();
 
             adap.Fill(tablo);
             
-
             for (int i = 0; i < tablo.Rows.Count; i++)
             {
-                listView1.Items.Add(tablo.Rows[i]["Urun"].ToString());
+                listView1.Items.Add(tablo.Rows[i]["SatisiD"].ToString());
+                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Urun"].ToString());
                 listView1.Items[i].SubItems.Add(tablo.Rows[i]["Deger"].ToString());
                 listView1.Items[i].SubItems.Add(tablo.Rows[i]["Stok"].ToString());
             }
@@ -59,7 +54,6 @@ namespace odev
             {
                 label8.Text = rd["Para"].ToString()+" TL";
             }
-
             baglan.Close();
         }
 
@@ -97,12 +91,13 @@ namespace odev
                 MessageBox.Show("Para Onayı Alanlarını Boş Bırakamazsınız ");
             }
         }
-
+        
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
-             
+            int uid;
+            uid = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            alisveris alsvrs = new alisveris(uid,id,listView1);
+            alsvrs.Show();
         }
-
-    
     }
 }

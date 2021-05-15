@@ -14,7 +14,7 @@ using System.IO;
 namespace odev
 {
 
-    public partial class giris_sayfasi : Form
+    public partial class giris_sayfasi : MetroFramework.Forms.MetroForm
     {
         SqlConnection con;
         SqlCommand com;
@@ -25,21 +25,23 @@ namespace odev
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            Kayit_ol kyt = new Kayit_ol();
+            kyt.Show();
         }
-          
+
         private void button1_Click(object sender, EventArgs e)
         {
+
             con = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
             com = new SqlCommand();
             con.Open();
             com.Connection = con;
-            com.CommandText = "Select * From bilgiler Where  KullaniciAdi='"+textBox1.Text+ "' AND Sifre='"+textBox2.Text+"'";
+            com.CommandText = "Select * From bilgiler Where  KullaniciAdi='" + textBox1.Text + "' AND Sifre='" + textBox2.Text + "'";
             rd = com.ExecuteReader();
 
-            if (textBox1.Text !="" && textBox2.Text !="")
+            if (textBox1.Text != "" && textBox2.Text != "")
             {
                 if (rd.Read())
                 {
@@ -68,19 +70,14 @@ namespace odev
             {
                 MessageBox.Show("Kullanıcı Adını veya Şifreyi Girmediniz..");
             }
-           
+
             con.Close();
-
         }
 
-
-        private void button2_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Kayit_ol kyt = new Kayit_ol();
-            kyt.Show();
-        }
 
-        
+        }
     }
 }
     
