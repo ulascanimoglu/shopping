@@ -17,11 +17,6 @@ Yönetici girişi:
 
 -Şifre => 123456
 
-Veritabanını github a atamadık. Bu yüzden bulut linki paylaşmayı düşündük.
-
-https://drive.google.com/file/d/1ds6sOEqngFy-_MRBu1FIBVWorLmpYayj/view?usp=sharing
-https://drive.google.com/file/d/1WvNd4jHepl3R48_HGhMJZA769NCSR__s/view?usp=sharing
-
 
 Hazırlayanlar: 
 
