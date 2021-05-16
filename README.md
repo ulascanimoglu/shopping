@@ -24,6 +24,9 @@ https://drive.google.com/file/d/1WvNd4jHepl3R48_HGhMJZA769NCSR__s/view?usp=shari
 
 
 Hazırlayanlar: 
+
 -Ömer Fikri Gülcemal (192802009)
+
 -Ulaş Canımoğlu (192802039)
+
 Tüm hakları saklıdır.
