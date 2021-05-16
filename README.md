@@ -12,7 +12,7 @@ bir market gereksinimlerinin ihtiyaca uygun şekilde gerçekleştirmesi.
 - Kullanıcıların uygun miktarda parası olduğu surette dilediği gibi alışverişini yapması.
 
 Yönetici girişi:
-	Kullanıcı adı => admin 
+	Kullanıcı adı => admin
 	Şifre => 123456
 
 Veritabanını github a atamadık. Bu yüzden bulut linki paylaşmayı düşündük.
