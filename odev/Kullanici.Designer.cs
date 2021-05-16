@@ -31,6 +31,7 @@ namespace odev
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -51,7 +52,6 @@ namespace odev
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -82,11 +82,21 @@ namespace odev
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alışveriş";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(6, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(513, 20);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "* İşlem Yapmak İstediğiniz Ürünün id\'sine Tıklayınız";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(559, 129);
+            this.label8.Location = new System.Drawing.Point(541, 129);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 2;
@@ -287,16 +297,6 @@ namespace odev
             this.label1.Size = new System.Drawing.Size(126, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ürün Adı : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(6, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(495, 20);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "İşlem Yapmak İstediğiniz Ürünün id\'sine Tıklayınız";
             // 
             // Kullanici
             // 

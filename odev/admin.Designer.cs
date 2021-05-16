@@ -49,6 +49,7 @@ namespace odev
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // columnHeader6
@@ -110,7 +111,7 @@ namespace odev
             this.columnHeader12});
             this.listView1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(24, 56);
+            this.listView1.Location = new System.Drawing.Point(23, 75);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(534, 367);
             this.listView1.TabIndex = 0;
@@ -131,6 +132,7 @@ namespace odev
             // columnHeader16
             // 
             this.columnHeader16.Text = "Ürün Adı";
+            this.columnHeader16.Width = 90;
             // 
             // columnHeader11
             // 
@@ -151,7 +153,7 @@ namespace odev
             this.columnHeader15});
             this.listView2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(631, 56);
+            this.listView2.Location = new System.Drawing.Point(634, 75);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(380, 367);
             this.listView2.TabIndex = 1;
@@ -178,7 +180,7 @@ namespace odev
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(181, 13);
+            this.label1.Location = new System.Drawing.Point(178, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 18);
             this.label1.TabIndex = 2;
@@ -188,18 +190,30 @@ namespace odev
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(749, 13);
+            this.label2.Location = new System.Drawing.Point(750, 45);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Para Onaylama";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Location = new System.Drawing.Point(19, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(510, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "* İşlem Yapmak İstediğiniz Sıranın id\'sine Tıklayınız";
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1023, 460);
+            this.ClientSize = new System.Drawing.Size(1030, 460);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listView2);
@@ -232,5 +246,6 @@ namespace odev
         private System.Windows.Forms.ColumnHeader columnHeader14;
         private System.Windows.Forms.ColumnHeader columnHeader15;
         private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.Label label3;
     }
 }

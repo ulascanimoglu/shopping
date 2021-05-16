@@ -68,7 +68,7 @@ namespace odev
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(239, 195);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(158, 27);
             this.textBox1.TabIndex = 3;
@@ -76,7 +76,7 @@ namespace odev
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(239, 263);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(158, 27);
             this.textBox2.TabIndex = 4;
@@ -114,9 +114,9 @@ namespace odev
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Image = global::odev.Properties.Resources.En_IyIsIne_guven_1;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 28);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 486);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 481);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -135,7 +135,7 @@ namespace odev
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "giris_sayfasi";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

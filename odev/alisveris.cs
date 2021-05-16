@@ -12,7 +12,7 @@ using System.IO;
 
 namespace odev
 {
-    public partial class alisveris : Form
+    public partial class alisveris : MetroFramework.Forms.MetroForm
     {
         ListView lvw;
         int uid;
@@ -73,7 +73,7 @@ namespace odev
         {
             decimal toplamPara=0;
             int stok = Convert.ToInt32(label5.Text.ToString());
-            int istek = Convert.ToInt32(textBox1.Text.ToString());
+            
             baglan.Open();
             komut = new SqlCommand("Select * From bilgiler Where UseriD='" + id + "'", baglan);
             SqlDataReader rd;
@@ -84,9 +84,10 @@ namespace odev
                
             }
             baglan.Close();
-            
-                if (textBox1.Text != "")
-              {
+
+            if (textBox1.Text != "")
+            {
+                int istek = Convert.ToInt32(textBox1.Text.ToString());
 
                 if (istek <= stok && toplamPara>=(para*istek))
                 {
