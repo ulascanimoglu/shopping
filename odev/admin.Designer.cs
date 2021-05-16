@@ -142,7 +142,7 @@ namespace odev
             // columnHeader12
             // 
             this.columnHeader12.Text = "Stok";
-            this.columnHeader12.Width = 95;
+            this.columnHeader12.Width = 85;
             // 
             // listView2
             // 

@@ -29,19 +29,19 @@ namespace odev
                 try
                 {
                     baglan.Open();
-                    SqlCommand komut = new SqlCommand("insert into bilgiler (Ad,Soyad,KullaniciAdi,Sifre,TcKimlik,Telefon,Email,Adres,YetkiiD) values( '" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "','" + textBox4.Text.ToString() + "','" + textBox5.Text.ToString() + "','" + textBox6.Text.ToString() + "','" + textBox7.Text.ToString() + "','" + textBox8.Text.ToString() + "' ,'" + 2 + "')", baglan);
+                    SqlCommand komut = new SqlCommand("insert into bilgiler (Ad,Soyad,KullaniciAdi,Sifre,TcKimlik,Telefon,Email,Adres,Para,YetkiiD) values( '" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "','" + textBox4.Text.ToString() + "','" + textBox5.Text.ToString() + "','" + textBox6.Text.ToString() + "','" + textBox7.Text.ToString() + "','" + textBox8.Text.ToString() + "' ,'" + 0.0000 + "','"+ 2 +"')", baglan);
                     komut.ExecuteNonQuery();
                     baglan.Close();
-
                 }
                 catch (Exception)
                 {
                     deger = true;
                     throw;
                 }
-
+                
                 if (!deger)
                 {
+                    MessageBox.Show("Başarıyla Kayıt Oldunuz");
                     this.Close();
                 }
             }
@@ -49,6 +49,7 @@ namespace odev
             {
                 MessageBox.Show("Boş Alan Bırakamazsınız Tüm Bilgileri Giriniz.");
             }
+            
         }
     }
 }

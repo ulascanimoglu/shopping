@@ -18,19 +18,21 @@ namespace odev
         int uid;
         int id;
         decimal para;
+        Label lbl8;
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
         SqlCommand komut = new SqlCommand();
 
-        public alisveris(int uid, int id,ListView lvw)
+        public alisveris(int uid, int id,ListView lvw, Label lbl8)
         {
             InitializeComponent();
             this.uid = uid;
             this.id = id;
             this.lvw = lvw;
-            goster();
-            
+            this.lbl8 = lbl8;
+            goster();  
         }
-        private void listeGoster(ListView lvw)
+
+        private void listeGoster(ListView lvw, Label lbl8)
         {
             lvw.Items.Clear();
             baglan.Open();
@@ -50,7 +52,14 @@ namespace odev
                 lvw.Items[i].SubItems.Add(tablo.Rows[i]["Deger"].ToString());
                 lvw.Items[i].SubItems.Add(tablo.Rows[i]["Stok"].ToString());
             }
-    
+            komut = new SqlCommand("Select Para From bilgiler Where UseriD='" + id + "'", baglan);
+            SqlDataReader rd;
+            rd = komut.ExecuteReader();
+            while (rd.Read())
+            {
+                lbl8.Text = rd["Para"].ToString() + " TL";
+            }
+
             baglan.Close();
         }
         private void goster()
@@ -95,7 +104,7 @@ namespace odev
                     komut = new SqlCommand("exec StokAzaltma '"+istek+"','" + uid+"','"+id +"'",baglan);
                     komut.ExecuteNonQuery();
                     baglan.Close();
-                    listeGoster(lvw);
+                    listeGoster(lvw,lbl8);
                 }
                 else
                 {

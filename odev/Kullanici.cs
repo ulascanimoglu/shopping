@@ -96,7 +96,7 @@ namespace odev
         {
             int uid;
             uid = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
-            alisveris alsvrs = new alisveris(uid,id,listView1);
+            alisveris alsvrs = new alisveris(uid,id,listView1,label8);
             alsvrs.Show();
         }
     }
