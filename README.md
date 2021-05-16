@@ -7,13 +7,14 @@ bir market gereksinimlerinin ihtiyaca uygun şekilde gerçekleştirmesi.
 
 İşlevlerimiz: 
 - Kullanıcının uygulamaya üye olması
-- Ve üye olan kullanıcının ürünlerini ve parasını izin istemek üzere sisteme girmesi.
+- Üye olan kullanıcının ürünlerini ve parasını izin istemek üzere sisteme girmesi.
 - Yöneticinin ürünü ve parayı onaylaması.
 - Kullanıcıların uygun miktarda parası olduğu surette dilediği gibi alışverişini yapması.
 
 Yönetici girişi:
 
 -Kullanıcı adı => admin
+
 -Şifre => 123456
 
 Veritabanını github a atamadık. Bu yüzden bulut linki paylaşmayı düşündük.
