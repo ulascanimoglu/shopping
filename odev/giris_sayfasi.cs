@@ -25,7 +25,7 @@ namespace odev
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_kayit_Click(object sender, EventArgs e)
         {
             Kayit_ol kyt = new Kayit_ol();
             kyt.Show();
@@ -52,13 +52,20 @@ namespace odev
                         textBox2.Clear();
                         admn.Show();
                     }
-                    else
+                    else if((Convert.ToInt32(rd["YetkiiD"]) == 2))
                     {
                         Kullanici kllnc = new Kullanici(Convert.ToInt32(rd["UseriD"]));
                         textBox1.Clear();
                         textBox2.Clear();
                         kllnc.Show();
 
+                    }
+                    else
+                    {
+                        muhasebe mhsb = new muhasebe(Convert.ToInt32(rd["UseriD"]));
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        mhsb.Show();
                     }
                 }
                 else

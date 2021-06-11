@@ -80,7 +80,7 @@ namespace odev
             if (textBox3.Text != "")
             {
                 baglan.Open();
-                SqlCommand komut = new SqlCommand("insert into AdminOnay (OPara,UseriD,Onay)values('" + textBox3.Text.ToString() + "','" + id + "','" + 0 + "')", baglan);
+                SqlCommand komut = new SqlCommand("insert into AdminOnay (OPara,UseriD,Onay,ParaBirimi)values('" + textBox3.Text.ToString() + "','" + id + "','" + 0 + "','" + cmb_parabirim.Text.ToString()+"')", baglan);
                 komut.ExecuteNonQuery();
                 baglan.Close();
                 MessageBox.Show("İsteğiniz Başarıyla Admine İletilmiştir. En Kısa Zamanda Cevap Verilecektir");
@@ -99,5 +99,6 @@ namespace odev
             alisveris alsvrs = new alisveris(uid,id,listView1,label8);
             alsvrs.Show();
         }
+
     }
 }

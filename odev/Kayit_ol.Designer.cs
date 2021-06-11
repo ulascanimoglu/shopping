@@ -254,7 +254,7 @@ namespace odev
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1062, 544);
+            this.ClientSize = new System.Drawing.Size(1059, 542);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);

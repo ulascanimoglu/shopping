@@ -40,6 +40,8 @@ namespace odev
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label10 = new System.Windows.Forms.Label();
+            this.cmb_parabirim = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -65,7 +67,7 @@ namespace odev
             this.tabControl1.Location = new System.Drawing.Point(13, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 434);
+            this.tabControl1.Size = new System.Drawing.Size(716, 437);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -153,6 +155,8 @@ namespace odev
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.cmb_parabirim);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.label6);
@@ -168,9 +172,33 @@ namespace odev
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 405);
+            this.tabPage2.Size = new System.Drawing.Size(708, 408);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ürün ve Bakiye Ekleme";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label10.Location = new System.Drawing.Point(395, 77);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(152, 23);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "Para Birimi : ";
+            // 
+            // cmb_parabirim
+            // 
+            this.cmb_parabirim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_parabirim.FormattingEnabled = true;
+            this.cmb_parabirim.Items.AddRange(new object[] {
+            "Türk Lirası",
+            "ABD Doları",
+            "İngiliz Sterlini",
+            "Euro"});
+            this.cmb_parabirim.Location = new System.Drawing.Point(553, 79);
+            this.cmb_parabirim.Name = "cmb_parabirim";
+            this.cmb_parabirim.Size = new System.Drawing.Size(134, 24);
+            this.cmb_parabirim.TabIndex = 12;
             // 
             // button2
             // 
@@ -186,16 +214,16 @@ namespace odev
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(531, 77);
+            this.textBox3.Location = new System.Drawing.Point(553, 116);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 27);
+            this.textBox3.Size = new System.Drawing.Size(134, 27);
             this.textBox3.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(410, 81);
+            this.label6.Location = new System.Drawing.Point(395, 116);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 23);
             this.label6.TabIndex = 9;
@@ -303,7 +331,7 @@ namespace odev
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(726, 450);
+            this.ClientSize = new System.Drawing.Size(744, 453);
             this.Controls.Add(this.tabControl1);
             this.Name = "Kullanici";
             this.Text = "Kullanici";
@@ -342,5 +370,7 @@ namespace odev
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox cmb_parabirim;
     }
 }

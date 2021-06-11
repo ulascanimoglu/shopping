@@ -50,6 +50,7 @@ namespace odev
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // columnHeader6
@@ -150,12 +151,13 @@ namespace odev
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader13,
             this.columnHeader14,
-            this.columnHeader15});
+            this.columnHeader15,
+            this.columnHeader17});
             this.listView2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(634, 75);
+            this.listView2.Location = new System.Drawing.Point(622, 75);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(380, 367);
+            this.listView2.Size = new System.Drawing.Size(505, 367);
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -164,7 +166,7 @@ namespace odev
             // columnHeader13
             // 
             this.columnHeader13.Text = "id";
-            this.columnHeader13.Width = 35;
+            this.columnHeader13.Width = 50;
             // 
             // columnHeader14
             // 
@@ -173,8 +175,8 @@ namespace odev
             // 
             // columnHeader15
             // 
-            this.columnHeader15.Text = "Para";
-            this.columnHeader15.Width = 100;
+            this.columnHeader15.Text = "Para Birimi";
+            this.columnHeader15.Width = 115;
             // 
             // label1
             // 
@@ -207,12 +209,17 @@ namespace odev
             this.label3.TabIndex = 4;
             this.label3.Text = "* İşlem Yapmak İstediğiniz Sıranın id\'sine Tıklayınız";
             // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Para";
+            this.columnHeader17.Width = 80;
+            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1030, 460);
+            this.ClientSize = new System.Drawing.Size(1139, 458);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -247,5 +254,6 @@ namespace odev
         private System.Windows.Forms.ColumnHeader columnHeader15;
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
     }
 }

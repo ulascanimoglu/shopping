@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
 using System.Data.OleDb;
+using System.Xml;
 
 namespace odev
 {
@@ -66,6 +67,7 @@ namespace odev
 
                 listView2.Items.Add(tablo.Rows[i]["id"].ToString());
                 listView2.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString());
+                listView2.Items[i].SubItems.Add(tablo.Rows[i]["ParaBirim"].ToString());
                 listView2.Items[i].SubItems.Add(tablo.Rows[i]["KPara"].ToString());
             }
             baglan.Close();
@@ -96,25 +98,70 @@ namespace odev
 
         private void listView2_DoubleClick(object sender, EventArgs e)
         {
-            id = int.Parse(listView2.SelectedItems[0].SubItems[0].Text);
-            DialogResult dialogResult = MessageBox.Show("Kabul Ediyor Musunuz?", "Onay", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
-            {
-                SqlCommand com = new SqlCommand("exec adminOnayPara '" + id + "'", baglan);
-                baglan.Open();
-                com.ExecuteNonQuery();
-                baglan.Close();
-                goster_para();
+           
+                string birim;
+                decimal deger;
 
-            }
-            else if (dialogResult == DialogResult.No)
+                id = int.Parse(listView2.SelectedItems[0].SubItems[0].Text);
+                DialogResult dialogResult = MessageBox.Show("Kabul Ediyor Musunuz?", "Onay", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+
+                    birim = (listView2.SelectedItems[0].SubItems[2].Text.ToString());
+
+                    deger=Para_birim(birim);
+                                 
+                    SqlCommand com = new SqlCommand("exec adminOnayPara '" + id +"','" + deger +  "'", baglan);
+                    baglan.Open();
+                    com.ExecuteNonQuery();
+                    baglan.Close();
+                    goster_para();
+
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    SqlCommand cmd = new SqlCommand("exec paraOnaylamamak '" + id + "'", baglan);
+                    baglan.Open();
+                    cmd.ExecuteNonQuery();
+                    baglan.Close();
+                    goster_para();
+                }
+        }
+        private decimal Para_birim(string birim)
+        {
+            decimal dolar;
+            decimal euro;
+            decimal sterlin;
+            decimal deger;
+
+            XmlDocument xmlVerisi = new XmlDocument();
+            xmlVerisi.Load("http://www.tcmb.gov.tr/kurlar/today.xml");
+            
+            dolar = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "USD")).InnerText.Replace('.', ','));
+            euro = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "EUR")).InnerText.Replace('.', ','));
+            sterlin = Convert.ToDecimal(xmlVerisi.SelectSingleNode(string.Format("Tarih_Date/Currency[@Kod='{0}']/ForexSelling", "GBP")).InnerText.Replace('.', ','));
+    
+            if (birim == "Türk Lirası")
             {
-                SqlCommand cmd = new SqlCommand("exec paraOnaylamamak '" + id + "'", baglan);
-                baglan.Open();
-                cmd.ExecuteNonQuery();
-                baglan.Close();
-                goster_para();
+                deger = 1;
+                return deger;
             }
+            else if (birim == "ABD Doları")
+            {
+                deger = dolar;
+                return deger;
+            }
+            else if (birim == "Euro")
+            {
+                deger = euro;
+                return deger;
+            }
+            else 
+            {
+                deger = sterlin;
+                return deger;
+            }
+           
         }
     }
 }
