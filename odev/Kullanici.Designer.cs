@@ -67,7 +67,7 @@ namespace odev
             this.tabControl1.Location = new System.Drawing.Point(13, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(716, 437);
+            this.tabControl1.Size = new System.Drawing.Size(735, 437);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -80,7 +80,7 @@ namespace odev
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 405);
+            this.tabPage1.Size = new System.Drawing.Size(711, 408);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alışveriş";
             // 
@@ -172,7 +172,7 @@ namespace odev
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(708, 408);
+            this.tabPage2.Size = new System.Drawing.Size(727, 408);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ürün ve Bakiye Ekleme";
             // 
@@ -180,7 +180,7 @@ namespace odev
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(395, 77);
+            this.label10.Location = new System.Drawing.Point(385, 77);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(152, 23);
             this.label10.TabIndex = 13;
@@ -189,15 +189,16 @@ namespace odev
             // cmb_parabirim
             // 
             this.cmb_parabirim.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmb_parabirim.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmb_parabirim.FormattingEnabled = true;
             this.cmb_parabirim.Items.AddRange(new object[] {
             "Türk Lirası",
             "ABD Doları",
             "İngiliz Sterlini",
             "Euro"});
-            this.cmb_parabirim.Location = new System.Drawing.Point(553, 79);
+            this.cmb_parabirim.Location = new System.Drawing.Point(543, 77);
             this.cmb_parabirim.Name = "cmb_parabirim";
-            this.cmb_parabirim.Size = new System.Drawing.Size(134, 24);
+            this.cmb_parabirim.Size = new System.Drawing.Size(155, 26);
             this.cmb_parabirim.TabIndex = 12;
             // 
             // button2
@@ -213,17 +214,17 @@ namespace odev
             // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(553, 116);
+            this.textBox3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox3.Location = new System.Drawing.Point(543, 114);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(134, 27);
+            this.textBox3.Size = new System.Drawing.Size(155, 26);
             this.textBox3.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(395, 116);
+            this.label6.Location = new System.Drawing.Point(385, 116);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(104, 23);
             this.label6.TabIndex = 9;
@@ -252,10 +253,10 @@ namespace odev
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox2.Location = new System.Drawing.Point(231, 149);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 27);
+            this.textBox2.Size = new System.Drawing.Size(121, 26);
             this.textBox2.TabIndex = 6;
             // 
             // label4
@@ -280,10 +281,10 @@ namespace odev
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.textBox1.Location = new System.Drawing.Point(231, 112);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 27);
+            this.textBox1.Size = new System.Drawing.Size(121, 26);
             this.textBox1.TabIndex = 3;
             // 
             // label2
@@ -299,7 +300,7 @@ namespace odev
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Arpa",
@@ -313,7 +314,7 @@ namespace odev
             "Yulaf"});
             this.comboBox1.Location = new System.Drawing.Point(231, 73);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 27);
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 1;
             // 
             // label1
@@ -331,7 +332,7 @@ namespace odev
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(744, 453);
+            this.ClientSize = new System.Drawing.Size(760, 456);
             this.Controls.Add(this.tabControl1);
             this.Name = "Kullanici";
             this.Text = "Kullanici";

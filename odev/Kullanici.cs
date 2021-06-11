@@ -71,7 +71,7 @@ namespace odev
             }
             else
             {
-                MessageBox.Show("Ürün Onayı Alanlarını Bırakamazsınız");
+                MessageBox.Show("Ürün Onayı Alanlarını Boş Bırakamazsınız");
             }
         }
 
@@ -99,6 +99,5 @@ namespace odev
             alisveris alsvrs = new alisveris(uid,id,listView1,label8);
             alsvrs.Show();
         }
-
     }
 }

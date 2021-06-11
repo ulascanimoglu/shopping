@@ -143,7 +143,7 @@ namespace odev
     
             if (birim == "Türk Lirası")
             {
-                deger = 1;
+                deger = 10000;
                 return deger;
             }
             else if (birim == "ABD Doları")
