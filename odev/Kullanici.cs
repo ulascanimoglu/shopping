@@ -15,6 +15,7 @@ namespace odev
     public partial class Kullanici : Form
     {
         int id;
+        int para;
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
         
         public Kullanici(int id)
@@ -53,6 +54,7 @@ namespace odev
             while (rd.Read())
             {
                 label8.Text = rd["Para"].ToString()+" TL";
+                para = Convert.ToInt32(rd["Para"]);
             }
             baglan.Close();
         }
@@ -98,6 +100,13 @@ namespace odev
             uid = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
             alisveris alsvrs = new alisveris(uid,id,listView1,label8);
             alsvrs.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           
+            talep tlp = new talep(id,para, listView1, label8);
+            tlp.Show();
         }
     }
 }

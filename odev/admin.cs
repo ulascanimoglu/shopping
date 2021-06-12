@@ -84,6 +84,7 @@ namespace odev
                 com.ExecuteNonQuery();
                 baglan.Close();
                 goster_urun();
+
             }
             else if (dialogResult == DialogResult.No)
             {

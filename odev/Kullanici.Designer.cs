@@ -31,6 +31,7 @@ namespace odev
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -67,12 +68,13 @@ namespace odev
             this.tabControl1.Location = new System.Drawing.Point(13, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(735, 437);
+            this.tabControl1.Size = new System.Drawing.Size(829, 484);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label7);
@@ -80,9 +82,21 @@ namespace odev
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(711, 408);
+            this.tabPage1.Size = new System.Drawing.Size(821, 455);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alışveriş";
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button3.Location = new System.Drawing.Point(304, 320);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(156, 54);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Fiyat Belirle";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label9
             // 
@@ -98,7 +112,7 @@ namespace odev
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(541, 129);
+            this.label8.Location = new System.Drawing.Point(596, 128);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(67, 20);
             this.label8.TabIndex = 2;
@@ -108,7 +122,7 @@ namespace odev
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(541, 49);
+            this.label7.Location = new System.Drawing.Point(608, 49);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 20);
             this.label7.TabIndex = 1;
@@ -126,7 +140,7 @@ namespace odev
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(6, 49);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(509, 215);
+            this.listView1.Size = new System.Drawing.Size(549, 215);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -172,7 +186,7 @@ namespace odev
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(727, 408);
+            this.tabPage2.Size = new System.Drawing.Size(821, 455);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ürün ve Bakiye Ekleme";
             // 
@@ -332,7 +346,7 @@ namespace odev
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(760, 456);
+            this.ClientSize = new System.Drawing.Size(854, 500);
             this.Controls.Add(this.tabControl1);
             this.Name = "Kullanici";
             this.Text = "Kullanici";
@@ -373,5 +387,6 @@ namespace odev
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox cmb_parabirim;
+        private System.Windows.Forms.Button button3;
     }
 }

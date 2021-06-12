@@ -101,6 +101,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SqlyazilimyapimiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="talep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="talep.Designer.cs">
+      <DependentUpon>talep.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +135,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="talep.resx">
+      <DependentUpon>talep.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
