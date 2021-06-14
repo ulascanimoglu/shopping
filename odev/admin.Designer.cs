@@ -39,6 +39,7 @@ namespace odev
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -47,10 +48,11 @@ namespace odev
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // columnHeader6
@@ -106,6 +108,7 @@ namespace odev
             this.listView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
+            this.columnHeader18,
             this.columnHeader10,
             this.columnHeader16,
             this.columnHeader11,
@@ -114,7 +117,7 @@ namespace odev
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(23, 75);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(534, 367);
+            this.listView1.Size = new System.Drawing.Size(599, 367);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -124,6 +127,11 @@ namespace odev
             // 
             this.columnHeader9.Text = "id";
             this.columnHeader9.Width = 35;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Kullanıcı İd";
+            this.columnHeader18.Width = 110;
             // 
             // columnHeader10
             // 
@@ -155,7 +163,7 @@ namespace odev
             this.columnHeader17});
             this.listView2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(622, 75);
+            this.listView2.Location = new System.Drawing.Point(667, 75);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(505, 367);
             this.listView2.TabIndex = 1;
@@ -178,6 +186,11 @@ namespace odev
             this.columnHeader15.Text = "Para Birimi";
             this.columnHeader15.Width = 115;
             // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Para";
+            this.columnHeader17.Width = 80;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -192,7 +205,7 @@ namespace odev
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(750, 45);
+            this.label2.Location = new System.Drawing.Point(865, 43);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(134, 18);
             this.label2.TabIndex = 3;
@@ -209,17 +222,22 @@ namespace odev
             this.label3.TabIndex = 4;
             this.label3.Text = "* İşlem Yapmak İstediğiniz Sıranın id\'sine Tıklayınız";
             // 
-            // columnHeader17
+            // label4
             // 
-            this.columnHeader17.Text = "Para";
-            this.columnHeader17.Width = 80;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(575, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "label4";
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1139, 458);
+            this.ClientSize = new System.Drawing.Size(1184, 464);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -255,5 +273,7 @@ namespace odev
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        private System.Windows.Forms.Label label4;
     }
 }

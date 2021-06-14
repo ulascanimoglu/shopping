@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Globalization;
 
 namespace odev
 {
@@ -100,6 +101,7 @@ namespace odev
 
                 if (istek <= stok && toplamPara>=(para*istek))
                 {
+              
                     baglan.Open();
                     komut = new SqlCommand("exec StokAzaltma '"+istek+"','" + uid+"','"+id +"'",baglan);
                     komut.ExecuteNonQuery();

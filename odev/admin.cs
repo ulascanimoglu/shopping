@@ -41,6 +41,7 @@ namespace odev
             for (int i = 0; i < tablo.Rows.Count; i++)
             {
                 listView1.Items.Add(tablo.Rows[i]["id"].ToString());
+                listView1.Items[i].SubItems.Add(tablo.Rows[i]["kid"].ToString());
                 listView1.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString()+" "+ tablo.Rows[i]["KSoyad"].ToString());
                 listView1.Items[i].SubItems.Add(tablo.Rows[i]["Adi"].ToString());
                 listView1.Items[i].SubItems.Add(tablo.Rows[i]["Fiyat"].ToString());
@@ -75,7 +76,13 @@ namespace odev
       
         private void listView1_DoubleClick_1(object sender, EventArgs e)
         {
+            string ad = listView1.SelectedItems[0].SubItems[3].Text;
+            decimal para = Convert.ToDecimal(listView1.SelectedItems[0].SubItems[4].Text);
+            int stok = Convert.ToInt32(listView1.SelectedItems[0].SubItems[5].Text);
+            
             id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
+            int saticiid = int.Parse(listView1.SelectedItems[0].SubItems[1].Text); 
+
             DialogResult dialogResult = MessageBox.Show("Kabul Ediyor Musunuz?", "Onay", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
@@ -85,6 +92,34 @@ namespace odev
                 baglan.Close();
                 goster_urun();
 
+                talep(ad,para,stok,saticiid);
+           
+               /* SqlCommand komut = new SqlCommand();
+                SqlDataReader rd;
+                baglan.Open();
+                komut.Connection = baglan;
+                komut.CommandText = "Select * From Talep Where UrunAd='"+ad+ "'AND Fiyat>='"+para+ "' AND Miktar<='" +stok+"'";
+                rd = komut.ExecuteReader();
+                if(rd.Read())
+                {
+                    label4.Text = "asdasd";
+             
+                    if (Convert.ToBoolean(rd["kontrol"])==false) 
+                    {
+                        int miktar = Convert.ToInt32(rd["Miktar"]);
+                        decimal fiyat = Convert.ToDecimal(rd["Fiyat"]);
+                        int userid = Convert.ToInt32(rd["UseriD"]);
+                        int talepid = Convert.ToInt32(rd["TalepiD"]);
+                                        
+                       
+                        SqlCommand com1 = new SqlCommand("exec Talepler '" + miktar + "','" + saticiid + "','" + userid + "','" + fiyat + "','" + talepid + "'", baglan);
+                        com1.ExecuteNonQuery();
+                        rd.Close();
+                        MessageBox.Show("Talep oldu");
+                        
+                    }
+                }
+                baglan.Close();*/
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -95,6 +130,35 @@ namespace odev
                 goster_urun();
             }
             
+        }
+        private void talep(string ad, decimal para, int stok, int saticiid)
+        {
+            
+            SqlCommand komut = new SqlCommand();
+            SqlDataReader rd;
+            baglan.Open();
+            komut.Connection = baglan;
+            komut.CommandText = "Select * From Talep Where UrunAd='" + ad + "'AND Fiyat>='" + para + "' AND Miktar<='" + stok + "'";
+            rd = komut.ExecuteReader();
+
+            if (rd.Read())
+            {
+                
+
+                if (Convert.ToBoolean(rd["kontrol"]) == false)
+                {
+                    int miktar = Convert.ToInt32(rd["Miktar"]);
+                    decimal fiyat = Convert.ToDecimal(rd["Fiyat"]);
+                    int userid = Convert.ToInt32(rd["UseriD"]);
+                    int talepid = Convert.ToInt32(rd["TalepiD"]);
+
+
+                    SqlCommand com1 = new SqlCommand("exec Talepler '" + miktar + "','" + saticiid + "','" + userid + "','" + fiyat + "','" + talepid + "'", baglan);
+                    com1.ExecuteNonQuery();
+                   
+                }
+            }
+            baglan.Close();
         }
 
         private void listView2_DoubleClick(object sender, EventArgs e)

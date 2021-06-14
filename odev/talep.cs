@@ -103,7 +103,7 @@ namespace odev
                 {
                     baglan.Close();
                     baglan.Open();
-                    SqlCommand komut = new SqlCommand("insert into Talep (UseriD,UrunAd,Fiyat,Miktar,kontrol)values('" + id + "','" + cmbisturun.Text.ToString() + "','" + txtboxistfiyat.Text.ToString() + "','" + txtboxistmiktar.Text.ToString() +"','"+0+ "')", baglan);
+                    SqlCommand komut = new SqlCommand("insert into Talep (UseriD,UrunAd,Fiyat,Miktar,kontrol)values('" + id + "','" + cmbisturun.Text.ToString() + "','" + Convert.ToDecimal(txtboxistfiyat.Text) + "','" + Convert.ToInt32(txtboxistmiktar.Text) +"','"+0+ "')", baglan);
                     komut.ExecuteNonQuery();
                     baglan.Close();
                     MessageBox.Show("Uygun Ürün Bulunamadı. Talep Oluşturuldu.");

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.IO;
+using System.Timers;
 
 namespace odev
 {
@@ -107,6 +108,18 @@ namespace odev
            
             talep tlp = new talep(id,para, listView1, label8);
             tlp.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand.Parameters.Add("@p1", SqlDbType.Date).Value = dateTimePicker1.Value.Date;
+            adapter.SelectCommand.Parameters.Add("@p2", SqlDbType.Date).Value = dateTimePicker2.Value.Date;
+            DataSet data = new DataSet();
+            baglan.Open();
+            adapter.Fill(data, "bilgiler");
+            dataGridView1.DataSource = data.Tables["bilgiler"];
+            baglan.Close();
         }
     }
 }
