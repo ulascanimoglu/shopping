@@ -132,19 +132,17 @@ namespace odev
             
         }
         private void talep(string ad, decimal para, int stok, int saticiid)
-        {
-            
+        { 
             SqlCommand komut = new SqlCommand();
             SqlDataReader rd;
             baglan.Open();
             komut.Connection = baglan;
-            komut.CommandText = "Select * From Talep Where UrunAd='" + ad + "'AND Fiyat>='" + para + "' AND Miktar<='" + stok + "'";
+            komut.CommandText = "Select * From Talep Where UrunAd='" + ad + "' AND Fiyat>='" + para + "' AND Miktar<='" + stok + "'";
             rd = komut.ExecuteReader();
 
             if (rd.Read())
             {
-                
-
+                label4.Text = "asdasd";
                 if (Convert.ToBoolean(rd["kontrol"]) == false)
                 {
                     int miktar = Convert.ToInt32(rd["Miktar"]);

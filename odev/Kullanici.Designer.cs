@@ -29,6 +29,7 @@ namespace odev
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
@@ -56,17 +57,27 @@ namespace odev
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.appData = new odev.appData();
+            this.tarihViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tarihViewTableAdapter = new odev.appDataTableAdapters.TarihViewTableAdapter();
+            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.değerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ürünDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -353,6 +364,7 @@ namespace odev
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button5);
             this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.Controls.Add(this.button4);
             this.tabPage3.Controls.Add(this.dateTimePicker2);
@@ -367,14 +379,56 @@ namespace odev
             this.tabPage3.Text = "İşlem Geçmişi";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // button5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(73, 24);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 17);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Başlangıç Tarihi";
+            this.button5.Location = new System.Drawing.Point(400, 127);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(111, 39);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "Göster";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tarihDataGridViewTextBoxColumn,
+            this.miktarDataGridViewTextBoxColumn,
+            this.değerDataGridViewTextBoxColumn,
+            this.ürünDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tarihViewBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 186);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(809, 266);
+            this.dataGridView1.TabIndex = 5;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(277, 127);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(109, 40);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Yazdır";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(277, 74);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(234, 23);
+            this.dateTimePicker2.TabIndex = 3;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(277, 24);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(234, 23);
+            this.dateTimePicker1.TabIndex = 2;
             // 
             // label12
             // 
@@ -385,39 +439,60 @@ namespace odev
             this.label12.TabIndex = 1;
             this.label12.Text = "Bitiş Tarihi";
             // 
-            // dateTimePicker1
+            // label11
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(277, 24);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(234, 23);
-            this.dateTimePicker1.TabIndex = 2;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(73, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 17);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Başlangıç Tarihi";
             // 
-            // dateTimePicker2
+            // appData
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(277, 74);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(234, 23);
-            this.dateTimePicker2.TabIndex = 3;
+            this.appData.DataSetName = "appData";
+            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button4
+            // tarihViewBindingSource
             // 
-            this.button4.Location = new System.Drawing.Point(316, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 40);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Göster";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.tarihViewBindingSource.DataMember = "TarihView";
+            this.tarihViewBindingSource.DataSource = this.appData;
             // 
-            // dataGridView1
+            // tarihViewTableAdapter
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(809, 266);
-            this.dataGridView1.TabIndex = 5;
+            this.tarihViewTableAdapter.ClearBeforeFill = true;
+            // 
+            // tarihDataGridViewTextBoxColumn
+            // 
+            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "Tarih";
+            this.tarihDataGridViewTextBoxColumn.HeaderText = "Tarih";
+            this.tarihDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
+            this.tarihDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // miktarDataGridViewTextBoxColumn
+            // 
+            this.miktarDataGridViewTextBoxColumn.DataPropertyName = "Miktar";
+            this.miktarDataGridViewTextBoxColumn.HeaderText = "Miktar";
+            this.miktarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.miktarDataGridViewTextBoxColumn.Name = "miktarDataGridViewTextBoxColumn";
+            this.miktarDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // değerDataGridViewTextBoxColumn
+            // 
+            this.değerDataGridViewTextBoxColumn.DataPropertyName = "Değer";
+            this.değerDataGridViewTextBoxColumn.HeaderText = "Değer";
+            this.değerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.değerDataGridViewTextBoxColumn.Name = "değerDataGridViewTextBoxColumn";
+            this.değerDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ürünDataGridViewTextBoxColumn
+            // 
+            this.ürünDataGridViewTextBoxColumn.DataPropertyName = "Ürün";
+            this.ürünDataGridViewTextBoxColumn.HeaderText = "Ürün";
+            this.ürünDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ürünDataGridViewTextBoxColumn.Name = "ürünDataGridViewTextBoxColumn";
+            this.ürünDataGridViewTextBoxColumn.Width = 125;
             // 
             // Kullanici
             // 
@@ -437,6 +512,8 @@ namespace odev
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,5 +553,13 @@ namespace odev
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private appData appData;
+        private System.Windows.Forms.BindingSource tarihViewBindingSource;
+        private appDataTableAdapters.TarihViewTableAdapter tarihViewTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tarihDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn miktarDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn değerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ürünDataGridViewTextBoxColumn;
     }
 }

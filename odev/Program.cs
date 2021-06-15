@@ -16,7 +16,7 @@ namespace odev
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new giris_sayfasi());
+            Application.Run(new Kullanici(3));
         }
     }
 }
