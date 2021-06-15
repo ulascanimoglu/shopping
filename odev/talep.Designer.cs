@@ -42,7 +42,7 @@ namespace odev
             // 
             this.isturun.AutoSize = true;
             this.isturun.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.isturun.Location = new System.Drawing.Point(89, 42);
+            this.isturun.Location = new System.Drawing.Point(74, 80);
             this.isturun.Name = "isturun";
             this.isturun.Size = new System.Drawing.Size(176, 20);
             this.isturun.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace odev
             // 
             this.istfiyat.AutoSize = true;
             this.istfiyat.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.istfiyat.Location = new System.Drawing.Point(89, 96);
+            this.istfiyat.Location = new System.Drawing.Point(74, 134);
             this.istfiyat.Name = "istfiyat";
             this.istfiyat.Size = new System.Drawing.Size(177, 20);
             this.istfiyat.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace odev
             // 
             this.istmiktar.AutoSize = true;
             this.istmiktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.istmiktar.Location = new System.Drawing.Point(89, 144);
+            this.istmiktar.Location = new System.Drawing.Point(74, 182);
             this.istmiktar.Name = "istmiktar";
             this.istmiktar.Size = new System.Drawing.Size(190, 20);
             this.istmiktar.TabIndex = 2;
@@ -71,7 +71,7 @@ namespace odev
             // cmbisturun
             // 
             this.cmbisturun.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbisturun.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cmbisturun.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.cmbisturun.FormattingEnabled = true;
             this.cmbisturun.Items.AddRange(new object[] {
             "Arpa",
@@ -83,31 +83,31 @@ namespace odev
             "Pirinç",
             "Su",
             "Yulaf"});
-            this.cmbisturun.Location = new System.Drawing.Point(318, 42);
+            this.cmbisturun.Location = new System.Drawing.Point(303, 80);
             this.cmbisturun.Name = "cmbisturun";
-            this.cmbisturun.Size = new System.Drawing.Size(121, 26);
+            this.cmbisturun.Size = new System.Drawing.Size(121, 28);
             this.cmbisturun.TabIndex = 3;
             // 
             // txtboxistfiyat
             // 
-            this.txtboxistfiyat.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtboxistfiyat.Location = new System.Drawing.Point(318, 96);
+            this.txtboxistfiyat.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtboxistfiyat.Location = new System.Drawing.Point(303, 134);
             this.txtboxistfiyat.Name = "txtboxistfiyat";
-            this.txtboxistfiyat.Size = new System.Drawing.Size(121, 26);
+            this.txtboxistfiyat.Size = new System.Drawing.Size(121, 28);
             this.txtboxistfiyat.TabIndex = 4;
             // 
             // txtboxistmiktar
             // 
-            this.txtboxistmiktar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtboxistmiktar.Location = new System.Drawing.Point(318, 144);
+            this.txtboxistmiktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtboxistmiktar.Location = new System.Drawing.Point(303, 182);
             this.txtboxistmiktar.Name = "txtboxistmiktar";
-            this.txtboxistmiktar.Size = new System.Drawing.Size(121, 26);
+            this.txtboxistmiktar.Size = new System.Drawing.Size(121, 28);
             this.txtboxistmiktar.TabIndex = 5;
             // 
             // btntalep
             // 
             this.btntalep.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btntalep.Location = new System.Drawing.Point(298, 200);
+            this.btntalep.Location = new System.Drawing.Point(283, 238);
             this.btntalep.Name = "btntalep";
             this.btntalep.Size = new System.Drawing.Size(161, 66);
             this.btntalep.TabIndex = 6;
@@ -119,7 +119,7 @@ namespace odev
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 368);
+            this.ClientSize = new System.Drawing.Size(559, 369);
             this.Controls.Add(this.btntalep);
             this.Controls.Add(this.txtboxistmiktar);
             this.Controls.Add(this.txtboxistfiyat);

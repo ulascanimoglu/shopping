@@ -13,7 +13,7 @@ using System.IO;
 
 namespace odev
 {
-    public partial class talep : Form
+    public partial class talep : MetroFramework.Forms.MetroForm
     {
         int uid;
         int id;

@@ -12,7 +12,7 @@ using System.Data.SqlClient;
 
 namespace odev
 {
-    public partial class muhasebe : Form
+    public partial class muhasebe : MetroFramework.Forms.MetroForm
     {
         int id;
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");

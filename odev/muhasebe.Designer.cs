@@ -37,7 +37,7 @@ namespace odev
             // 
             this.lblkazanc.AutoSize = true;
             this.lblkazanc.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblkazanc.Location = new System.Drawing.Point(129, 90);
+            this.lblkazanc.Location = new System.Drawing.Point(117, 95);
             this.lblkazanc.Name = "lblkazanc";
             this.lblkazanc.Size = new System.Drawing.Size(129, 20);
             this.lblkazanc.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace odev
             // 
             this.lblkazancpara.AutoSize = true;
             this.lblkazancpara.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblkazancpara.Location = new System.Drawing.Point(319, 90);
+            this.lblkazancpara.Location = new System.Drawing.Point(307, 95);
             this.lblkazancpara.Name = "lblkazancpara";
             this.lblkazancpara.Size = new System.Drawing.Size(67, 20);
             this.lblkazancpara.TabIndex = 1;
