@@ -27,7 +27,7 @@ namespace odev
             InitializeComponent();
             this.id = id;
             this.para = para;
-            label1.Text= para.ToString();
+
             this.lvw = lvw;
             this.lbl8 = lbl8;
             

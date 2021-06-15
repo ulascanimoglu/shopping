@@ -150,10 +150,8 @@ namespace odev
                     int userid = Convert.ToInt32(rd["UseriD"]);
                     int talepid = Convert.ToInt32(rd["TalepiD"]);
 
-
                     SqlCommand com1 = new SqlCommand("exec Talepler '" + miktar + "','" + saticiid + "','" + userid + "','" + fiyat + "','" + talepid + "'", baglan);
                     com1.ExecuteNonQuery();
-                   
                 }
             }
             baglan.Close();

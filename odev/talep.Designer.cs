@@ -36,7 +36,6 @@ namespace odev
             this.txtboxistfiyat = new System.Windows.Forms.TextBox();
             this.txtboxistmiktar = new System.Windows.Forms.TextBox();
             this.btntalep = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // isturun
@@ -116,21 +115,11 @@ namespace odev
             this.btntalep.UseVisualStyleBackColor = true;
             this.btntalep.Click += new System.EventHandler(this.btntalep_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(520, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "label1";
-            // 
             // talep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(648, 368);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btntalep);
             this.Controls.Add(this.txtboxistmiktar);
             this.Controls.Add(this.txtboxistfiyat);
@@ -154,6 +143,5 @@ namespace odev
         private System.Windows.Forms.TextBox txtboxistfiyat;
         private System.Windows.Forms.TextBox txtboxistmiktar;
         private System.Windows.Forms.Button btntalep;
-        private System.Windows.Forms.Label label1;
     }
 }

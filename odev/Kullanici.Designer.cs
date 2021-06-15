@@ -59,25 +59,25 @@ namespace odev
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.değerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ürünDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tarihViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.appData = new odev.appData();
             this.button4 = new System.Windows.Forms.Button();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.appData = new odev.appData();
-            this.tarihViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tarihViewTableAdapter = new odev.appDataTableAdapters.TarihViewTableAdapter();
-            this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.değerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ürünDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -391,6 +391,8 @@ namespace odev
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -401,10 +403,57 @@ namespace odev
             this.dataGridView1.DataSource = this.tarihViewBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(6, 186);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(809, 266);
             this.dataGridView1.TabIndex = 5;
+            // 
+            // tarihDataGridViewTextBoxColumn
+            // 
+            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "Tarih";
+            this.tarihDataGridViewTextBoxColumn.HeaderText = "Tarih";
+            this.tarihDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
+            this.tarihDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tarihDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // miktarDataGridViewTextBoxColumn
+            // 
+            this.miktarDataGridViewTextBoxColumn.DataPropertyName = "Miktar";
+            this.miktarDataGridViewTextBoxColumn.HeaderText = "Miktar";
+            this.miktarDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.miktarDataGridViewTextBoxColumn.Name = "miktarDataGridViewTextBoxColumn";
+            this.miktarDataGridViewTextBoxColumn.ReadOnly = true;
+            this.miktarDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // değerDataGridViewTextBoxColumn
+            // 
+            this.değerDataGridViewTextBoxColumn.DataPropertyName = "Değer";
+            this.değerDataGridViewTextBoxColumn.HeaderText = "Değer";
+            this.değerDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.değerDataGridViewTextBoxColumn.Name = "değerDataGridViewTextBoxColumn";
+            this.değerDataGridViewTextBoxColumn.ReadOnly = true;
+            this.değerDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // ürünDataGridViewTextBoxColumn
+            // 
+            this.ürünDataGridViewTextBoxColumn.DataPropertyName = "Ürün";
+            this.ürünDataGridViewTextBoxColumn.HeaderText = "Ürün";
+            this.ürünDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ürünDataGridViewTextBoxColumn.Name = "ürünDataGridViewTextBoxColumn";
+            this.ürünDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ürünDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tarihViewBindingSource
+            // 
+            this.tarihViewBindingSource.DataMember = "TarihView";
+            this.tarihViewBindingSource.DataSource = this.appData;
+            // 
+            // appData
+            // 
+            this.appData.DataSetName = "appData";
+            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button4
             // 
@@ -448,51 +497,9 @@ namespace odev
             this.label11.TabIndex = 0;
             this.label11.Text = "Başlangıç Tarihi";
             // 
-            // appData
-            // 
-            this.appData.DataSetName = "appData";
-            this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tarihViewBindingSource
-            // 
-            this.tarihViewBindingSource.DataMember = "TarihView";
-            this.tarihViewBindingSource.DataSource = this.appData;
-            // 
             // tarihViewTableAdapter
             // 
             this.tarihViewTableAdapter.ClearBeforeFill = true;
-            // 
-            // tarihDataGridViewTextBoxColumn
-            // 
-            this.tarihDataGridViewTextBoxColumn.DataPropertyName = "Tarih";
-            this.tarihDataGridViewTextBoxColumn.HeaderText = "Tarih";
-            this.tarihDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tarihDataGridViewTextBoxColumn.Name = "tarihDataGridViewTextBoxColumn";
-            this.tarihDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // miktarDataGridViewTextBoxColumn
-            // 
-            this.miktarDataGridViewTextBoxColumn.DataPropertyName = "Miktar";
-            this.miktarDataGridViewTextBoxColumn.HeaderText = "Miktar";
-            this.miktarDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.miktarDataGridViewTextBoxColumn.Name = "miktarDataGridViewTextBoxColumn";
-            this.miktarDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // değerDataGridViewTextBoxColumn
-            // 
-            this.değerDataGridViewTextBoxColumn.DataPropertyName = "Değer";
-            this.değerDataGridViewTextBoxColumn.HeaderText = "Değer";
-            this.değerDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.değerDataGridViewTextBoxColumn.Name = "değerDataGridViewTextBoxColumn";
-            this.değerDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // ürünDataGridViewTextBoxColumn
-            // 
-            this.ürünDataGridViewTextBoxColumn.DataPropertyName = "Ürün";
-            this.ürünDataGridViewTextBoxColumn.HeaderText = "Ürün";
-            this.ürünDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ürünDataGridViewTextBoxColumn.Name = "ürünDataGridViewTextBoxColumn";
-            this.ürünDataGridViewTextBoxColumn.Width = 125;
             // 
             // Kullanici
             // 
@@ -512,8 +519,8 @@ namespace odev
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
             this.ResumeLayout(false);
 
         }
