@@ -94,32 +94,6 @@ namespace odev
 
                 talep(ad,para,stok,saticiid);
            
-               /* SqlCommand komut = new SqlCommand();
-                SqlDataReader rd;
-                baglan.Open();
-                komut.Connection = baglan;
-                komut.CommandText = "Select * From Talep Where UrunAd='"+ad+ "'AND Fiyat>='"+para+ "' AND Miktar<='" +stok+"'";
-                rd = komut.ExecuteReader();
-                if(rd.Read())
-                {
-                    label4.Text = "asdasd";
-             
-                    if (Convert.ToBoolean(rd["kontrol"])==false) 
-                    {
-                        int miktar = Convert.ToInt32(rd["Miktar"]);
-                        decimal fiyat = Convert.ToDecimal(rd["Fiyat"]);
-                        int userid = Convert.ToInt32(rd["UseriD"]);
-                        int talepid = Convert.ToInt32(rd["TalepiD"]);
-                                        
-                       
-                        SqlCommand com1 = new SqlCommand("exec Talepler '" + miktar + "','" + saticiid + "','" + userid + "','" + fiyat + "','" + talepid + "'", baglan);
-                        com1.ExecuteNonQuery();
-                        rd.Close();
-                        MessageBox.Show("Talep oldu");
-                        
-                    }
-                }
-                baglan.Close();*/
             }
             else if (dialogResult == DialogResult.No)
             {
@@ -142,7 +116,7 @@ namespace odev
 
             if (rd.Read())
             {
-                label4.Text = "asdasd";
+
                 if (Convert.ToBoolean(rd["kontrol"]) == false)
                 {
                     int miktar = Convert.ToInt32(rd["Miktar"]);

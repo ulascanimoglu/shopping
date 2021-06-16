@@ -52,7 +52,6 @@ namespace odev
             this.lbl_onay_urun = new System.Windows.Forms.Label();
             this.lbl_onay_para = new System.Windows.Forms.Label();
             this.lbl_info = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // columnHeader6
@@ -116,7 +115,7 @@ namespace odev
             this.lV_urun_onay.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lV_urun_onay.HideSelection = false;
             this.lV_urun_onay.Location = new System.Drawing.Point(17, 61);
-            this.lV_urun_onay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lV_urun_onay.Margin = new System.Windows.Forms.Padding(2);
             this.lV_urun_onay.Name = "lV_urun_onay";
             this.lV_urun_onay.Size = new System.Drawing.Size(450, 299);
             this.lV_urun_onay.TabIndex = 0;
@@ -165,7 +164,7 @@ namespace odev
             this.lV_para_onay.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lV_para_onay.HideSelection = false;
             this.lV_para_onay.Location = new System.Drawing.Point(500, 61);
-            this.lV_para_onay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lV_para_onay.Margin = new System.Windows.Forms.Padding(2);
             this.lV_para_onay.Name = "lV_para_onay";
             this.lV_para_onay.Size = new System.Drawing.Size(380, 299);
             this.lV_para_onay.TabIndex = 1;
@@ -227,29 +226,18 @@ namespace odev
             this.lbl_info.TabIndex = 4;
             this.lbl_info.Text = "* İşlem Yapmak İstediğiniz Sıranın id\'sine Tıklayınız";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(431, 18);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
-            // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(888, 377);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.lbl_info);
             this.Controls.Add(this.lbl_onay_para);
             this.Controls.Add(this.lbl_onay_urun);
             this.Controls.Add(this.lV_para_onay);
             this.Controls.Add(this.lV_urun_onay);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin";
             this.Text = "admin";
             this.ResumeLayout(false);
@@ -281,6 +269,5 @@ namespace odev
         private System.Windows.Forms.Label lbl_info;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
-        private System.Windows.Forms.Label label4;
     }
 }
