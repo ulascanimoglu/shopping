@@ -65,7 +65,7 @@ namespace odev
             baglan.Close();
         }
 
-        private void btn_aramayap_Click(object sender, EventArgs e)
+        private void btn_urun_onayiste_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text != "" && textBox1.Text != "" && textBox2.Text != "")
             {
@@ -83,7 +83,7 @@ namespace odev
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_bakiye_onayiste_Click(object sender, EventArgs e)
         {
             if (textBox3.Text != "")
             {
@@ -100,7 +100,7 @@ namespace odev
             }
         }
 
-        private void listView1_DoubleClick(object sender, EventArgs e)
+        private void lV_kullanici_alisveris_DoubleClick(object sender, EventArgs e)
         {
             int uid;
             uid = int.Parse(lV_kullanici_alisveris.SelectedItems[0].SubItems[0].Text);
@@ -108,14 +108,14 @@ namespace odev
             alsvrs.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_aramayap_Click(object sender, EventArgs e)
         {
 
             talep tlp = new talep(id, para, lV_kullanici_alisveris, lbl_para);
             tlp.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_yazdir_Click(object sender, EventArgs e)
         {
             //Creating DataTable.
             DataTable dt = new DataTable();
@@ -172,7 +172,7 @@ namespace odev
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_goster_Click(object sender, EventArgs e)
         {
             SqlDataAdapter adapter = new SqlDataAdapter("exec Tarihproc @p1,@p2", baglan);
             adapter.SelectCommand.Parameters.Add("@p1", SqlDbType.Date).Value = dateTP_baslangic.Value.Date;

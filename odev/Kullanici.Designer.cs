@@ -133,7 +133,7 @@ namespace odev
             this.btn_aramayap.TabIndex = 5;
             this.btn_aramayap.Text = "Arama Yap";
             this.btn_aramayap.UseVisualStyleBackColor = true;
-            this.btn_aramayap.Click += new System.EventHandler(this.button3_Click);
+            this.btn_aramayap.Click += new System.EventHandler(this.btn_aramayap_Click);
             // 
             // lbl_info
             // 
@@ -185,7 +185,7 @@ namespace odev
             this.lV_kullanici_alisveris.TabIndex = 0;
             this.lV_kullanici_alisveris.UseCompatibleStateImageBehavior = false;
             this.lV_kullanici_alisveris.View = System.Windows.Forms.View.Details;
-            this.lV_kullanici_alisveris.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+            this.lV_kullanici_alisveris.DoubleClick += new System.EventHandler(this.lV_kullanici_alisveris_DoubleClick);
             // 
             // columnHeader4
             // 
@@ -269,7 +269,7 @@ namespace odev
             this.btn_bakiye_onayiste.TabIndex = 11;
             this.btn_bakiye_onayiste.Text = "Onay İste";
             this.btn_bakiye_onayiste.UseVisualStyleBackColor = true;
-            this.btn_bakiye_onayiste.Click += new System.EventHandler(this.button2_Click);
+            this.btn_bakiye_onayiste.Click += new System.EventHandler(this.btn_bakiye_onayiste_Click);
             // 
             // textBox3
             // 
@@ -312,7 +312,7 @@ namespace odev
             this.btn_urun_onayiste.TabIndex = 7;
             this.btn_urun_onayiste.Text = "Onay İste";
             this.btn_urun_onayiste.UseVisualStyleBackColor = true;
-            this.btn_urun_onayiste.Click += new System.EventHandler(this.btn_aramayap_Click);
+            this.btn_urun_onayiste.Click += new System.EventHandler(this.btn_urun_onayiste_Click);
             // 
             // textBox2
             // 
@@ -425,7 +425,7 @@ namespace odev
             this.btn_goster.TabIndex = 6;
             this.btn_goster.Text = "Göster";
             this.btn_goster.UseVisualStyleBackColor = true;
-            this.btn_goster.Click += new System.EventHandler(this.button5_Click);
+            this.btn_goster.Click += new System.EventHandler(this.btn_goster_Click);
             // 
             // dataGV_rapor
             // 
@@ -505,7 +505,7 @@ namespace odev
             this.btn_yazdir.TabIndex = 4;
             this.btn_yazdir.Text = "Yazdır";
             this.btn_yazdir.UseVisualStyleBackColor = true;
-            this.btn_yazdir.Click += new System.EventHandler(this.button4_Click);
+            this.btn_yazdir.Click += new System.EventHandler(this.btn_yazdir_Click);
             // 
             // dateTP_bitis
             // 
