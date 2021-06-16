@@ -11,6 +11,12 @@ bir market gereksinimlerinin ihtiyaca uygun şekilde gerçekleştirmesi.
 - Yöneticinin ürünü ve parayı onaylaması.
 - Kullanıcıların uygun miktarda parası olduğu surette dilediği gibi alışverişini yapması.
 
+ Güncellemeler:
+- 4 farklı para birimi girişi yapılabilir.
+- Muhasebeye %1 ücret tahsisi yapılır.
+- Seçtiğiniz tarih aralığında gerçekleştirdiğiniz alışverişler raporlanır.
+- İstediğiniz fiyattan ürün araması gerçekleştirilir eğer bulunumazsa talep oluşturulur.
+
 Yönetici girişi:
 
 -Kullanıcı adı => admin
