@@ -71,18 +71,18 @@ namespace odev
             rd = komut.ExecuteReader();
             while (rd.Read())
             {
-                label2.Text = rd["Urun"].ToString();
-                label5.Text = rd["Stok"].ToString();
+                lbl1_al_urun.Text = rd["Urun"].ToString();
+                lbl1_al_miktar.Text = rd["Stok"].ToString();
                 para = Convert.ToDecimal(rd["Deger"]);
             }
             rd.Close();
             baglan.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_onayla_Click(object sender, EventArgs e)
         {
             decimal toplamPara=0;
-            int stok = Convert.ToInt32(label5.Text.ToString());
+            int stok = Convert.ToInt32(lbl1_al_miktar.Text.ToString());
             
             baglan.Open();
             komut = new SqlCommand("Select * From bilgiler Where UseriD='" + id + "'", baglan);
@@ -95,9 +95,9 @@ namespace odev
             }
             baglan.Close();
 
-            if (textBox1.Text != "")
+            if (txtb_al_miktar.Text != "")
             {
-                int istek = Convert.ToInt32(textBox1.Text.ToString());
+                int istek = Convert.ToInt32(txtb_al_miktar.Text.ToString());
 
                 if (istek <= stok && toplamPara>=(para*istek))
                 {
@@ -117,7 +117,7 @@ namespace odev
             {
                 MessageBox.Show("Boş Değer Girdiniz");
             }
-            textBox1.Clear();
+            txtb_al_miktar.Clear();
         }
     }
 }

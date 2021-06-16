@@ -49,23 +49,23 @@ namespace odev
 
             for (int i = 0; i < tablo.Rows.Count; i++)
             {
-                listView1.Items.Add(tablo.Rows[i]["SatisiD"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Urun"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Deger"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Stok"].ToString());
+                lV_kullanici_alisveris.Items.Add(tablo.Rows[i]["SatisiD"].ToString());
+                lV_kullanici_alisveris.Items[i].SubItems.Add(tablo.Rows[i]["Urun"].ToString());
+                lV_kullanici_alisveris.Items[i].SubItems.Add(tablo.Rows[i]["Deger"].ToString());
+                lV_kullanici_alisveris.Items[i].SubItems.Add(tablo.Rows[i]["Stok"].ToString());
             }
             komut = new SqlCommand("Select Para From bilgiler Where UseriD='" + id + "'", baglan);
             SqlDataReader rd;
             rd = komut.ExecuteReader();
             while (rd.Read())
             {
-                label8.Text = rd["Para"].ToString() + " TL";
+                lbl_para.Text = rd["Para"].ToString() + " TL";
                 para = Convert.ToInt32(rd["Para"]);
             }
             baglan.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_aramayap_Click(object sender, EventArgs e)
         {
             if (comboBox1.Text != "" && textBox1.Text != "" && textBox2.Text != "")
             {
@@ -103,15 +103,15 @@ namespace odev
         private void listView1_DoubleClick(object sender, EventArgs e)
         {
             int uid;
-            uid = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
-            alisveris alsvrs = new alisveris(uid, id, listView1, label8);
+            uid = int.Parse(lV_kullanici_alisveris.SelectedItems[0].SubItems[0].Text);
+            alisveris alsvrs = new alisveris(uid, id, lV_kullanici_alisveris, lbl_para);
             alsvrs.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
-            talep tlp = new talep(id, para, listView1, label8);
+            talep tlp = new talep(id, para, lV_kullanici_alisveris, lbl_para);
             tlp.Show();
         }
 
@@ -121,13 +121,13 @@ namespace odev
             DataTable dt = new DataTable();
 
             //Adding the Columns.
-            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            foreach (DataGridViewColumn column in dataGV_rapor.Columns)
             {
                 dt.Columns.Add(column.HeaderText, column.ValueType);
             }
 
             //Adding the Rows.
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            foreach (DataGridViewRow row in dataGV_rapor.Rows)
             {
                 dt.Rows.Add();
                 foreach (DataGridViewCell cell in row.Cells)
@@ -175,12 +175,12 @@ namespace odev
         private void button5_Click(object sender, EventArgs e)
         {
             SqlDataAdapter adapter = new SqlDataAdapter("exec Tarihproc @p1,@p2", baglan);
-            adapter.SelectCommand.Parameters.Add("@p1", SqlDbType.Date).Value = dateTimePicker1.Value.Date;
-            adapter.SelectCommand.Parameters.Add("@p2", SqlDbType.Date).Value = dateTimePicker2.Value.Date;
+            adapter.SelectCommand.Parameters.Add("@p1", SqlDbType.Date).Value = dateTP_baslangic.Value.Date;
+            adapter.SelectCommand.Parameters.Add("@p2", SqlDbType.Date).Value = dateTP_bitis.Value.Date;
             DataSet data = new DataSet();
             baglan.Open();
             adapter.Fill(data, "bilgiler");
-            dataGridView1.DataSource = data.Tables["bilgiler"];
+            dataGV_rapor.DataSource = data.Tables["bilgiler"];
             baglan.Close();
         }
     }

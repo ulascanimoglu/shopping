@@ -30,154 +30,162 @@ namespace odev
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabC_kullanici = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lbl_info2 = new System.Windows.Forms.Label();
+            this.btn_aramayap = new System.Windows.Forms.Button();
+            this.lbl_info = new System.Windows.Forms.Label();
+            this.lbl_para = new System.Windows.Forms.Label();
+            this.lbl_bakiye = new System.Windows.Forms.Label();
+            this.lV_kullanici_alisveris = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_bakiye_parabirim = new System.Windows.Forms.Label();
             this.cmb_parabirim = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_bakiye_onayiste = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_bakiye_miktar = new System.Windows.Forms.Label();
+            this.lbl_ekle_bakiye = new System.Windows.Forms.Label();
+            this.btn_urun_onayiste = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbl_urun_brmfiyat = new System.Windows.Forms.Label();
+            this.lbl_ekle_urun = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_urun_miktar = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbl_urun_ad = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btn_goster = new System.Windows.Forms.Button();
+            this.dataGV_rapor = new System.Windows.Forms.DataGridView();
             this.tarihDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.miktarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.değerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ürünDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarihViewBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appData = new odev.appData();
-            this.button4 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.btn_yazdir = new System.Windows.Forms.Button();
+            this.dateTP_bitis = new System.Windows.Forms.DateTimePicker();
+            this.dateTP_baslangic = new System.Windows.Forms.DateTimePicker();
+            this.lbl_tarih_bitis = new System.Windows.Forms.Label();
+            this.lbl_tarih_baslangic = new System.Windows.Forms.Label();
             this.tarihViewTableAdapter = new odev.appDataTableAdapters.TarihViewTableAdapter();
-            this.tabControl1.SuspendLayout();
+            this.tabC_kullanici.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_rapor)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // tabC_kullanici
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tabControl1.Location = new System.Drawing.Point(13, 4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(835, 484);
-            this.tabControl1.TabIndex = 0;
+            this.tabC_kullanici.Controls.Add(this.tabPage1);
+            this.tabC_kullanici.Controls.Add(this.tabPage2);
+            this.tabC_kullanici.Controls.Add(this.tabPage3);
+            this.tabC_kullanici.Font = new System.Drawing.Font("Verdana", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tabC_kullanici.Location = new System.Drawing.Point(10, 3);
+            this.tabC_kullanici.Margin = new System.Windows.Forms.Padding(2);
+            this.tabC_kullanici.Name = "tabC_kullanici";
+            this.tabC_kullanici.SelectedIndex = 0;
+            this.tabC_kullanici.Size = new System.Drawing.Size(626, 393);
+            this.tabC_kullanici.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.listView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Controls.Add(this.lbl_info2);
+            this.tabPage1.Controls.Add(this.btn_aramayap);
+            this.tabPage1.Controls.Add(this.lbl_info);
+            this.tabPage1.Controls.Add(this.lbl_para);
+            this.tabPage1.Controls.Add(this.lbl_bakiye);
+            this.tabPage1.Controls.Add(this.lV_kullanici_alisveris);
+            this.tabPage1.Location = new System.Drawing.Point(4, 21);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(827, 455);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(618, 368);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Alışveriş";
             // 
-            // label13
+            // lbl_info2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.Location = new System.Drawing.Point(16, 285);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(748, 20);
-            this.label13.TabIndex = 6;
-            this.label13.Text = "İsterseniz Arama Yapabilirsiniz. Aramanız Sonuçsuz Olursa Talep Oluşturulur.";
+            this.lbl_info2.AutoSize = true;
+            this.lbl_info2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_info2.Location = new System.Drawing.Point(12, 232);
+            this.lbl_info2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_info2.Name = "lbl_info2";
+            this.lbl_info2.Size = new System.Drawing.Size(607, 17);
+            this.lbl_info2.TabIndex = 6;
+            this.lbl_info2.Text = "İsterseniz Arama Yapabilirsiniz. Aramanız Sonuçsuz Olursa Talep Oluşturulur.";
             // 
-            // button3
+            // btn_aramayap
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(287, 343);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(156, 54);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Arama Yap";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btn_aramayap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_aramayap.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_aramayap.Location = new System.Drawing.Point(215, 279);
+            this.btn_aramayap.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_aramayap.Name = "btn_aramayap";
+            this.btn_aramayap.Size = new System.Drawing.Size(117, 44);
+            this.btn_aramayap.TabIndex = 5;
+            this.btn_aramayap.Text = "Arama Yap";
+            this.btn_aramayap.UseVisualStyleBackColor = true;
+            this.btn_aramayap.Click += new System.EventHandler(this.button3_Click);
             // 
-            // label9
+            // lbl_info
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.Location = new System.Drawing.Point(6, 14);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(513, 20);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "* İşlem Yapmak İstediğiniz Ürünün id\'sine Tıklayınız";
+            this.lbl_info.AutoSize = true;
+            this.lbl_info.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_info.Location = new System.Drawing.Point(4, 11);
+            this.lbl_info.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_info.Name = "lbl_info";
+            this.lbl_info.Size = new System.Drawing.Size(412, 17);
+            this.lbl_info.TabIndex = 3;
+            this.lbl_info.Text = "* İşlem Yapmak İstediğiniz Ürünün id\'sine Tıklayınız";
             // 
-            // label8
+            // lbl_para
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label8.Location = new System.Drawing.Point(627, 125);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 20);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "label8";
+            this.lbl_para.AutoSize = true;
+            this.lbl_para.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_para.Location = new System.Drawing.Point(470, 102);
+            this.lbl_para.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_para.Name = "lbl_para";
+            this.lbl_para.Size = new System.Drawing.Size(54, 17);
+            this.lbl_para.TabIndex = 2;
+            this.lbl_para.Text = "label8";
             // 
-            // label7
+            // lbl_bakiye
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.Location = new System.Drawing.Point(627, 49);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Bakiyeniz";
+            this.lbl_bakiye.AutoSize = true;
+            this.lbl_bakiye.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_bakiye.Location = new System.Drawing.Point(470, 40);
+            this.lbl_bakiye.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_bakiye.Name = "lbl_bakiye";
+            this.lbl_bakiye.Size = new System.Drawing.Size(81, 17);
+            this.lbl_bakiye.TabIndex = 1;
+            this.lbl_bakiye.Text = "Bakiyeniz";
             // 
-            // listView1
+            // lV_kullanici_alisveris
             // 
-            this.listView1.BackColor = System.Drawing.Color.White;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lV_kullanici_alisveris.BackColor = System.Drawing.Color.White;
+            this.lV_kullanici_alisveris.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader4,
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 49);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(549, 215);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
+            this.lV_kullanici_alisveris.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lV_kullanici_alisveris.HideSelection = false;
+            this.lV_kullanici_alisveris.Location = new System.Drawing.Point(4, 40);
+            this.lV_kullanici_alisveris.Margin = new System.Windows.Forms.Padding(2);
+            this.lV_kullanici_alisveris.Name = "lV_kullanici_alisveris";
+            this.lV_kullanici_alisveris.Size = new System.Drawing.Size(413, 175);
+            this.lV_kullanici_alisveris.TabIndex = 0;
+            this.lV_kullanici_alisveris.UseCompatibleStateImageBehavior = false;
+            this.lV_kullanici_alisveris.View = System.Windows.Forms.View.Details;
+            this.lV_kullanici_alisveris.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader4
             // 
@@ -202,36 +210,38 @@ namespace odev
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.lbl_bakiye_parabirim);
             this.tabPage2.Controls.Add(this.cmb_parabirim);
-            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.btn_bakiye_onayiste);
             this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.lbl_bakiye_miktar);
+            this.tabPage2.Controls.Add(this.lbl_ekle_bakiye);
+            this.tabPage2.Controls.Add(this.btn_urun_onayiste);
             this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.label4);
-            this.tabPage2.Controls.Add(this.label3);
+            this.tabPage2.Controls.Add(this.lbl_urun_brmfiyat);
+            this.tabPage2.Controls.Add(this.lbl_ekle_urun);
             this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.lbl_urun_miktar);
             this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Controls.Add(this.lbl_urun_ad);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(827, 455);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage2.Size = new System.Drawing.Size(618, 368);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ürün ve Bakiye Ekleme";
             // 
-            // label10
+            // lbl_bakiye_parabirim
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label10.Location = new System.Drawing.Point(385, 77);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(152, 23);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Para Birimi : ";
+            this.lbl_bakiye_parabirim.AutoSize = true;
+            this.lbl_bakiye_parabirim.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_bakiye_parabirim.Location = new System.Drawing.Point(289, 63);
+            this.lbl_bakiye_parabirim.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_bakiye_parabirim.Name = "lbl_bakiye_parabirim";
+            this.lbl_bakiye_parabirim.Size = new System.Drawing.Size(113, 18);
+            this.lbl_bakiye_parabirim.TabIndex = 13;
+            this.lbl_bakiye_parabirim.Text = "Para Birimi : ";
             // 
             // cmb_parabirim
             // 
@@ -243,106 +253,117 @@ namespace odev
             "ABD Doları",
             "İngiliz Sterlini",
             "Euro"});
-            this.cmb_parabirim.Location = new System.Drawing.Point(543, 77);
+            this.cmb_parabirim.Location = new System.Drawing.Point(407, 63);
+            this.cmb_parabirim.Margin = new System.Windows.Forms.Padding(2);
             this.cmb_parabirim.Name = "cmb_parabirim";
-            this.cmb_parabirim.Size = new System.Drawing.Size(155, 26);
+            this.cmb_parabirim.Size = new System.Drawing.Size(117, 22);
             this.cmb_parabirim.TabIndex = 12;
             // 
-            // button2
+            // btn_bakiye_onayiste
             // 
-            this.button2.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(508, 204);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 44);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Onay İste";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_bakiye_onayiste.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_bakiye_onayiste.Location = new System.Drawing.Point(381, 166);
+            this.btn_bakiye_onayiste.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_bakiye_onayiste.Name = "btn_bakiye_onayiste";
+            this.btn_bakiye_onayiste.Size = new System.Drawing.Size(98, 36);
+            this.btn_bakiye_onayiste.TabIndex = 11;
+            this.btn_bakiye_onayiste.Text = "Onay İste";
+            this.btn_bakiye_onayiste.UseVisualStyleBackColor = true;
+            this.btn_bakiye_onayiste.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(543, 114);
+            this.textBox3.Location = new System.Drawing.Point(407, 93);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(155, 26);
+            this.textBox3.Size = new System.Drawing.Size(117, 22);
             this.textBox3.TabIndex = 10;
             // 
-            // label6
+            // lbl_bakiye_miktar
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(385, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 23);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Bakiye : ";
+            this.lbl_bakiye_miktar.AutoSize = true;
+            this.lbl_bakiye_miktar.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_bakiye_miktar.Location = new System.Drawing.Point(289, 94);
+            this.lbl_bakiye_miktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_bakiye_miktar.Name = "lbl_bakiye_miktar";
+            this.lbl_bakiye_miktar.Size = new System.Drawing.Size(79, 18);
+            this.lbl_bakiye_miktar.TabIndex = 9;
+            this.lbl_bakiye_miktar.Text = "Bakiye : ";
             // 
-            // label5
+            // lbl_ekle_bakiye
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(463, 30);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 23);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Bakiye Ekle";
+            this.lbl_ekle_bakiye.AutoSize = true;
+            this.lbl_ekle_bakiye.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ekle_bakiye.Location = new System.Drawing.Point(347, 24);
+            this.lbl_ekle_bakiye.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ekle_bakiye.Name = "lbl_ekle_bakiye";
+            this.lbl_ekle_bakiye.Size = new System.Drawing.Size(102, 18);
+            this.lbl_ekle_bakiye.TabIndex = 8;
+            this.lbl_ekle_bakiye.Text = "Bakiye Ekle";
             // 
-            // button1
+            // btn_urun_onayiste
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(222, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 44);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Onay İste";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_urun_onayiste.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_urun_onayiste.Location = new System.Drawing.Point(166, 166);
+            this.btn_urun_onayiste.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_urun_onayiste.Name = "btn_urun_onayiste";
+            this.btn_urun_onayiste.Size = new System.Drawing.Size(98, 36);
+            this.btn_urun_onayiste.TabIndex = 7;
+            this.btn_urun_onayiste.Text = "Onay İste";
+            this.btn_urun_onayiste.UseVisualStyleBackColor = true;
+            this.btn_urun_onayiste.Click += new System.EventHandler(this.btn_aramayap_Click);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox2.Location = new System.Drawing.Point(231, 149);
+            this.textBox2.Location = new System.Drawing.Point(173, 121);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 26);
+            this.textBox2.Size = new System.Drawing.Size(92, 22);
             this.textBox2.TabIndex = 6;
             // 
-            // label4
+            // lbl_urun_brmfiyat
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(28, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(210, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Ürün Birim-Fiyat : ";
+            this.lbl_urun_brmfiyat.AutoSize = true;
+            this.lbl_urun_brmfiyat.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_urun_brmfiyat.Location = new System.Drawing.Point(21, 124);
+            this.lbl_urun_brmfiyat.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_urun_brmfiyat.Name = "lbl_urun_brmfiyat";
+            this.lbl_urun_brmfiyat.Size = new System.Drawing.Size(158, 18);
+            this.lbl_urun_brmfiyat.TabIndex = 5;
+            this.lbl_urun_brmfiyat.Text = "Ürün Birim-Fiyat : ";
             // 
-            // label3
+            // lbl_ekle_urun
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(123, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Ürün Ekle";
+            this.lbl_ekle_urun.AutoSize = true;
+            this.lbl_ekle_urun.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_ekle_urun.Location = new System.Drawing.Point(92, 24);
+            this.lbl_ekle_urun.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ekle_urun.Name = "lbl_ekle_urun";
+            this.lbl_ekle_urun.Size = new System.Drawing.Size(86, 18);
+            this.lbl_ekle_urun.TabIndex = 4;
+            this.lbl_ekle_urun.Text = "Ürün Ekle";
             // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(231, 112);
+            this.textBox1.Location = new System.Drawing.Point(173, 91);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 26);
+            this.textBox1.Size = new System.Drawing.Size(92, 22);
             this.textBox1.TabIndex = 3;
             // 
-            // label2
+            // lbl_urun_miktar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(28, 116);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(167, 23);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ürün Miktarı : ";
+            this.lbl_urun_miktar.AutoSize = true;
+            this.lbl_urun_miktar.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_urun_miktar.Location = new System.Drawing.Point(21, 94);
+            this.lbl_urun_miktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_urun_miktar.Name = "lbl_urun_miktar";
+            this.lbl_urun_miktar.Size = new System.Drawing.Size(124, 18);
+            this.lbl_urun_miktar.TabIndex = 2;
+            this.lbl_urun_miktar.Text = "Ürün Miktarı : ";
             // 
             // comboBox1
             // 
@@ -359,69 +380,74 @@ namespace odev
             "Pirinç",
             "Su",
             "Yulaf"});
-            this.comboBox1.Location = new System.Drawing.Point(231, 73);
+            this.comboBox1.Location = new System.Drawing.Point(173, 59);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 26);
+            this.comboBox1.Size = new System.Drawing.Size(92, 22);
             this.comboBox1.TabIndex = 1;
             // 
-            // label1
+            // lbl_urun_ad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(28, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ürün Adı : ";
+            this.lbl_urun_ad.AutoSize = true;
+            this.lbl_urun_ad.Font = new System.Drawing.Font("Verdana", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_urun_ad.Location = new System.Drawing.Point(21, 63);
+            this.lbl_urun_ad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_urun_ad.Name = "lbl_urun_ad";
+            this.lbl_urun_ad.Size = new System.Drawing.Size(94, 18);
+            this.lbl_urun_ad.TabIndex = 0;
+            this.lbl_urun_ad.Text = "Ürün Adı : ";
             // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.tabPage3.Controls.Add(this.button5);
-            this.tabPage3.Controls.Add(this.dataGridView1);
-            this.tabPage3.Controls.Add(this.button4);
-            this.tabPage3.Controls.Add(this.dateTimePicker2);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
-            this.tabPage3.Controls.Add(this.label12);
-            this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Controls.Add(this.btn_goster);
+            this.tabPage3.Controls.Add(this.dataGV_rapor);
+            this.tabPage3.Controls.Add(this.btn_yazdir);
+            this.tabPage3.Controls.Add(this.dateTP_bitis);
+            this.tabPage3.Controls.Add(this.dateTP_baslangic);
+            this.tabPage3.Controls.Add(this.lbl_tarih_bitis);
+            this.tabPage3.Controls.Add(this.lbl_tarih_baslangic);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(827, 455);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage3.Size = new System.Drawing.Size(618, 368);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "İşlem Geçmişi";
             // 
-            // button5
+            // btn_goster
             // 
-            this.button5.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(456, 128);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(117, 39);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Göster";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_goster.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_goster.Location = new System.Drawing.Point(342, 104);
+            this.btn_goster.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_goster.Name = "btn_goster";
+            this.btn_goster.Size = new System.Drawing.Size(88, 32);
+            this.btn_goster.TabIndex = 6;
+            this.btn_goster.Text = "Göster";
+            this.btn_goster.UseVisualStyleBackColor = true;
+            this.btn_goster.Click += new System.EventHandler(this.button5_Click);
             // 
-            // dataGridView1
+            // dataGV_rapor
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGV_rapor.AllowUserToAddRows = false;
+            this.dataGV_rapor.AllowUserToDeleteRows = false;
+            this.dataGV_rapor.AutoGenerateColumns = false;
+            this.dataGV_rapor.BackgroundColor = System.Drawing.Color.Silver;
+            this.dataGV_rapor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGV_rapor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.tarihDataGridViewTextBoxColumn,
             this.miktarDataGridViewTextBoxColumn,
             this.değerDataGridViewTextBoxColumn,
             this.ürünDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tarihViewBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(809, 266);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGV_rapor.DataSource = this.tarihViewBindingSource;
+            this.dataGV_rapor.Location = new System.Drawing.Point(4, 151);
+            this.dataGV_rapor.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGV_rapor.Name = "dataGV_rapor";
+            this.dataGV_rapor.ReadOnly = true;
+            this.dataGV_rapor.RowHeadersWidth = 51;
+            this.dataGV_rapor.RowTemplate.Height = 24;
+            this.dataGV_rapor.Size = new System.Drawing.Size(607, 216);
+            this.dataGV_rapor.TabIndex = 5;
             // 
             // tarihDataGridViewTextBoxColumn
             // 
@@ -469,52 +495,57 @@ namespace odev
             this.appData.DataSetName = "appData";
             this.appData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // button4
+            // btn_yazdir
             // 
-            this.button4.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(277, 128);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 39);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Yazdır";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn_yazdir.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_yazdir.Location = new System.Drawing.Point(208, 104);
+            this.btn_yazdir.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_yazdir.Name = "btn_yazdir";
+            this.btn_yazdir.Size = new System.Drawing.Size(88, 32);
+            this.btn_yazdir.TabIndex = 4;
+            this.btn_yazdir.Text = "Yazdır";
+            this.btn_yazdir.UseVisualStyleBackColor = true;
+            this.btn_yazdir.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dateTimePicker2
+            // dateTP_bitis
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(277, 74);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(296, 26);
-            this.dateTimePicker2.TabIndex = 3;
+            this.dateTP_bitis.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTP_bitis.Location = new System.Drawing.Point(208, 60);
+            this.dateTP_bitis.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTP_bitis.Name = "dateTP_bitis";
+            this.dateTP_bitis.Size = new System.Drawing.Size(223, 22);
+            this.dateTP_bitis.TabIndex = 3;
             // 
-            // dateTimePicker1
+            // dateTP_baslangic
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(277, 24);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(296, 26);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dateTP_baslangic.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.dateTP_baslangic.Location = new System.Drawing.Point(208, 20);
+            this.dateTP_baslangic.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTP_baslangic.Name = "dateTP_baslangic";
+            this.dateTP_baslangic.Size = new System.Drawing.Size(223, 22);
+            this.dateTP_baslangic.TabIndex = 2;
             // 
-            // label12
+            // lbl_tarih_bitis
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.Location = new System.Drawing.Point(73, 74);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 18);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Bitiş Tarihi";
+            this.lbl_tarih_bitis.AutoSize = true;
+            this.lbl_tarih_bitis.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_tarih_bitis.Location = new System.Drawing.Point(55, 60);
+            this.lbl_tarih_bitis.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tarih_bitis.Name = "lbl_tarih_bitis";
+            this.lbl_tarih_bitis.Size = new System.Drawing.Size(78, 14);
+            this.lbl_tarih_bitis.TabIndex = 1;
+            this.lbl_tarih_bitis.Text = "Bitiş Tarihi";
             // 
-            // label11
+            // lbl_tarih_baslangic
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.Location = new System.Drawing.Point(73, 24);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(134, 18);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "Başlangıç Tarihi";
+            this.lbl_tarih_baslangic.AutoSize = true;
+            this.lbl_tarih_baslangic.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_tarih_baslangic.Location = new System.Drawing.Point(55, 20);
+            this.lbl_tarih_baslangic.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_tarih_baslangic.Name = "lbl_tarih_baslangic";
+            this.lbl_tarih_baslangic.Size = new System.Drawing.Size(112, 14);
+            this.lbl_tarih_baslangic.TabIndex = 0;
+            this.lbl_tarih_baslangic.Text = "Başlangıç Tarihi";
             // 
             // tarihViewTableAdapter
             // 
@@ -522,22 +553,23 @@ namespace odev
             // 
             // Kullanici
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(860, 500);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(645, 406);
+            this.Controls.Add(this.tabC_kullanici);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Kullanici";
             this.Text = "Kullanici";
             this.Load += new System.EventHandler(this.Kullanici_Load);
-            this.tabControl1.ResumeLayout(false);
+            this.tabC_kullanici.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGV_rapor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tarihViewBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appData)).EndInit();
             this.ResumeLayout(false);
@@ -546,40 +578,40 @@ namespace odev
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabC_kullanici;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lV_kullanici_alisveris;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_urun_onayiste;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl_urun_brmfiyat;
+        private System.Windows.Forms.Label lbl_ekle_urun;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_urun_miktar;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbl_urun_ad;
+        private System.Windows.Forms.Button btn_bakiye_onayiste;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_bakiye_miktar;
+        private System.Windows.Forms.Label lbl_ekle_bakiye;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_para;
+        private System.Windows.Forms.Label lbl_bakiye;
         private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_info;
+        private System.Windows.Forms.Label lbl_bakiye_parabirim;
         private System.Windows.Forms.ComboBox cmb_parabirim;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_aramayap;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DateTimePicker dateTP_bitis;
+        private System.Windows.Forms.DateTimePicker dateTP_baslangic;
+        private System.Windows.Forms.Label lbl_tarih_bitis;
+        private System.Windows.Forms.Label lbl_tarih_baslangic;
+        private System.Windows.Forms.DataGridView dataGV_rapor;
+        private System.Windows.Forms.Button btn_yazdir;
+        private System.Windows.Forms.Button btn_goster;
         private appData appData;
         private System.Windows.Forms.BindingSource tarihViewBindingSource;
         private appDataTableAdapters.TarihViewTableAdapter tarihViewTableAdapter;
@@ -587,6 +619,6 @@ namespace odev
         private System.Windows.Forms.DataGridViewTextBoxColumn miktarDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn değerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn ürünDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_info2;
     }
 }

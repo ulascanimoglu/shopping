@@ -21,15 +21,15 @@ namespace odev
 
         SqlConnection baglan = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_kayitol_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "" && textBox5.Text != "" && textBox6.Text != "" && textBox7.Text != "" && textBox8.Text != "")
+            if (txtb_kyt_ad.Text != "" && txtb_kyt_soyad.Text != "" && txtb_kyt_id.Text != "" && txtb_kyt_pw.Text != "" && txtb_kyt_tck.Text != "" && txtb_kyt_phoneN.Text != "" && txtb_kyt_mail.Text != "" && txtb_kyt_adress.Text != "")
             {
                 bool deger = false;
                 try
                 {
                     baglan.Open();
-                    SqlCommand komut = new SqlCommand("insert into bilgiler (Ad,Soyad,KullaniciAdi,Sifre,TcKimlik,Telefon,Email,Adres,Para,YetkiiD) values( '" + textBox1.Text.ToString() + "','" + textBox2.Text.ToString() + "','" + textBox3.Text.ToString() + "','" + textBox4.Text.ToString() + "','" + textBox5.Text.ToString() + "','" + textBox6.Text.ToString() + "','" + textBox7.Text.ToString() + "','" + textBox8.Text.ToString() + "' ,'" + 0.0000 + "','"+ 2 +"')", baglan);
+                    SqlCommand komut = new SqlCommand("insert into bilgiler (Ad,Soyad,KullaniciAdi,Sifre,TcKimlik,Telefon,Email,Adres,Para,YetkiiD) values( '" + txtb_kyt_ad.Text.ToString() + "','" + txtb_kyt_soyad.Text.ToString() + "','" + txtb_kyt_id.Text.ToString() + "','" + txtb_kyt_pw.Text.ToString() + "','" + txtb_kyt_tck.Text.ToString() + "','" + txtb_kyt_phoneN.Text.ToString() + "','" + txtb_kyt_mail.Text.ToString() + "','" + txtb_kyt_adress.Text.ToString() + "' ,'" + 0.0000 + "','"+ 2 +"')", baglan);
                     komut.ExecuteNonQuery();
                     baglan.Close();
                 }

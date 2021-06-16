@@ -29,97 +29,106 @@ namespace odev
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_al_urun = new System.Windows.Forms.Label();
+            this.txtb_al_miktar = new System.Windows.Forms.TextBox();
+            this.lbl1_al_urun = new System.Windows.Forms.Label();
+            this.lbl_alg_miktar = new System.Windows.Forms.Label();
+            this.btn_onayla = new System.Windows.Forms.Button();
+            this.lbl_al_miktar = new System.Windows.Forms.Label();
+            this.lbl1_al_miktar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_al_urun
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(31, 64);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Almak İstediğiniz Ürün : ";
+            this.lbl_al_urun.AutoSize = true;
+            this.lbl_al_urun.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_al_urun.Location = new System.Drawing.Point(23, 52);
+            this.lbl_al_urun.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_al_urun.Name = "lbl_al_urun";
+            this.lbl_al_urun.Size = new System.Drawing.Size(200, 17);
+            this.lbl_al_urun.TabIndex = 0;
+            this.lbl_al_urun.Text = "Almak İstediğiniz Ürün : ";
             // 
-            // textBox1
+            // txtb_al_miktar
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox1.Location = new System.Drawing.Point(298, 131);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 28);
-            this.textBox1.TabIndex = 1;
+            this.txtb_al_miktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtb_al_miktar.Location = new System.Drawing.Point(224, 106);
+            this.txtb_al_miktar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtb_al_miktar.Name = "txtb_al_miktar";
+            this.txtb_al_miktar.Size = new System.Drawing.Size(76, 24);
+            this.txtb_al_miktar.TabIndex = 1;
             // 
-            // label2
+            // lbl1_al_urun
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(294, 68);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.lbl1_al_urun.AutoSize = true;
+            this.lbl1_al_urun.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl1_al_urun.Location = new System.Drawing.Point(220, 55);
+            this.lbl1_al_urun.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl1_al_urun.Name = "lbl1_al_urun";
+            this.lbl1_al_urun.Size = new System.Drawing.Size(54, 17);
+            this.lbl1_al_urun.TabIndex = 2;
+            this.lbl1_al_urun.Text = "label2";
             // 
-            // label3
+            // lbl_alg_miktar
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(122, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 20);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Miktar Giriniz : ";
+            this.lbl_alg_miktar.AutoSize = true;
+            this.lbl_alg_miktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_alg_miktar.Location = new System.Drawing.Point(95, 109);
+            this.lbl_alg_miktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_alg_miktar.Name = "lbl_alg_miktar";
+            this.lbl_alg_miktar.Size = new System.Drawing.Size(125, 17);
+            this.lbl_alg_miktar.TabIndex = 3;
+            this.lbl_alg_miktar.Text = "Miktar Giriniz : ";
             // 
-            // button1
+            // btn_onayla
             // 
-            this.button1.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(298, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 49);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Onayla";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_onayla.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_onayla.Location = new System.Drawing.Point(224, 158);
+            this.btn_onayla.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_onayla.Name = "btn_onayla";
+            this.btn_onayla.Size = new System.Drawing.Size(75, 40);
+            this.btn_onayla.TabIndex = 4;
+            this.btn_onayla.Text = "Onayla";
+            this.btn_onayla.UseVisualStyleBackColor = true;
+            this.btn_onayla.Click += new System.EventHandler(this.btn_onayla_Click);
             // 
-            // label4
+            // lbl_al_miktar
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(51, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(227, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Toplam Miktar Sayısı : ";
+            this.lbl_al_miktar.AutoSize = true;
+            this.lbl_al_miktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_al_miktar.Location = new System.Drawing.Point(38, 81);
+            this.lbl_al_miktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_al_miktar.Name = "lbl_al_miktar";
+            this.lbl_al_miktar.Size = new System.Drawing.Size(183, 17);
+            this.lbl_al_miktar.TabIndex = 5;
+            this.lbl_al_miktar.Text = "Toplam Miktar Sayısı : ";
             // 
-            // label5
+            // lbl1_al_miktar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(294, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(67, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "label5";
+            this.lbl1_al_miktar.AutoSize = true;
+            this.lbl1_al_miktar.Font = new System.Drawing.Font("Verdana", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl1_al_miktar.Location = new System.Drawing.Point(220, 81);
+            this.lbl1_al_miktar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl1_al_miktar.Name = "lbl1_al_miktar";
+            this.lbl1_al_miktar.Size = new System.Drawing.Size(54, 17);
+            this.lbl1_al_miktar.TabIndex = 6;
+            this.lbl1_al_miktar.Text = "label5";
             // 
             // alisveris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 321);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(382, 261);
+            this.Controls.Add(this.lbl1_al_miktar);
+            this.Controls.Add(this.lbl_al_miktar);
+            this.Controls.Add(this.btn_onayla);
+            this.Controls.Add(this.lbl_alg_miktar);
+            this.Controls.Add(this.lbl1_al_urun);
+            this.Controls.Add(this.txtb_al_miktar);
+            this.Controls.Add(this.lbl_al_urun);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "alisveris";
+            this.Padding = new System.Windows.Forms.Padding(15, 49, 15, 16);
             this.Text = "alisveris";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -128,12 +137,12 @@ namespace odev
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_al_urun;
+        private System.Windows.Forms.TextBox txtb_al_miktar;
+        private System.Windows.Forms.Label lbl1_al_urun;
+        private System.Windows.Forms.Label lbl_alg_miktar;
+        private System.Windows.Forms.Button btn_onayla;
+        private System.Windows.Forms.Label lbl_al_miktar;
+        private System.Windows.Forms.Label lbl1_al_miktar;
     }
 }

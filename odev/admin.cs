@@ -27,7 +27,7 @@ namespace odev
         }
         private void goster_urun()
         {
-            listView1.Items.Clear();
+            lV_urun_onay.Items.Clear();
             baglan.Open();
             SqlCommand komut = new SqlCommand();
             komut.CommandText = "Select * From Onaylama";
@@ -40,19 +40,19 @@ namespace odev
 
             for (int i = 0; i < tablo.Rows.Count; i++)
             {
-                listView1.Items.Add(tablo.Rows[i]["id"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["kid"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString()+" "+ tablo.Rows[i]["KSoyad"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Adi"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["Fiyat"].ToString());
-                listView1.Items[i].SubItems.Add(tablo.Rows[i]["UMiktar"].ToString());
+                lV_urun_onay.Items.Add(tablo.Rows[i]["id"].ToString());
+                lV_urun_onay.Items[i].SubItems.Add(tablo.Rows[i]["kid"].ToString());
+                lV_urun_onay.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString()+" "+ tablo.Rows[i]["KSoyad"].ToString());
+                lV_urun_onay.Items[i].SubItems.Add(tablo.Rows[i]["Adi"].ToString());
+                lV_urun_onay.Items[i].SubItems.Add(tablo.Rows[i]["Fiyat"].ToString());
+                lV_urun_onay.Items[i].SubItems.Add(tablo.Rows[i]["UMiktar"].ToString());
             }
             baglan.Close();
         }
 
         private void goster_para()
         {
-            listView2.Items.Clear();
+            lV_para_onay.Items.Clear();
             baglan.Open();
             SqlCommand komut = new SqlCommand();
             komut.CommandText = "Select * From OnayPara";
@@ -66,22 +66,22 @@ namespace odev
             for (int i = 0; i < tablo.Rows.Count; i++)
             {
 
-                listView2.Items.Add(tablo.Rows[i]["id"].ToString());
-                listView2.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString());
-                listView2.Items[i].SubItems.Add(tablo.Rows[i]["ParaBirim"].ToString());
-                listView2.Items[i].SubItems.Add(tablo.Rows[i]["KPara"].ToString());
+                lV_para_onay.Items.Add(tablo.Rows[i]["id"].ToString());
+                lV_para_onay.Items[i].SubItems.Add(tablo.Rows[i]["KAd"].ToString());
+                lV_para_onay.Items[i].SubItems.Add(tablo.Rows[i]["ParaBirim"].ToString());
+                lV_para_onay.Items[i].SubItems.Add(tablo.Rows[i]["KPara"].ToString());
             }
             baglan.Close();
         }
       
         private void listView1_DoubleClick_1(object sender, EventArgs e)
         {
-            string ad = listView1.SelectedItems[0].SubItems[3].Text;
-            decimal para = Convert.ToDecimal(listView1.SelectedItems[0].SubItems[4].Text);
-            int stok = Convert.ToInt32(listView1.SelectedItems[0].SubItems[5].Text);
+            string ad = lV_urun_onay.SelectedItems[0].SubItems[3].Text;
+            decimal para = Convert.ToDecimal(lV_urun_onay.SelectedItems[0].SubItems[4].Text);
+            int stok = Convert.ToInt32(lV_urun_onay.SelectedItems[0].SubItems[5].Text);
             
-            id = int.Parse(listView1.SelectedItems[0].SubItems[0].Text);
-            int saticiid = int.Parse(listView1.SelectedItems[0].SubItems[1].Text); 
+            id = int.Parse(lV_urun_onay.SelectedItems[0].SubItems[0].Text);
+            int saticiid = int.Parse(lV_urun_onay.SelectedItems[0].SubItems[1].Text); 
 
             DialogResult dialogResult = MessageBox.Show("Kabul Ediyor Musunuz?", "Onay", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -163,12 +163,12 @@ namespace odev
                 string birim;
                 decimal deger;
 
-                id = int.Parse(listView2.SelectedItems[0].SubItems[0].Text);
+                id = int.Parse(lV_para_onay.SelectedItems[0].SubItems[0].Text);
                 DialogResult dialogResult = MessageBox.Show("Kabul Ediyor Musunuz?", "Onay", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
 
-                    birim = (listView2.SelectedItems[0].SubItems[2].Text.ToString());
+                    birim = (lV_para_onay.SelectedItems[0].SubItems[2].Text.ToString());
 
                     deger=Para_birim(birim);
                                  

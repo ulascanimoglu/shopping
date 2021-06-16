@@ -31,40 +31,40 @@ namespace odev
             kyt.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_giris_Click(object sender, EventArgs e)
         {
 
             con = new SqlConnection("Data Source=DESKTOP-ORFTL34;Initial Catalog=Sqlyazilimyapimi;Integrated Security=True");
             com = new SqlCommand();
             con.Open();
             com.Connection = con;
-            com.CommandText = "Select * From bilgiler Where  KullaniciAdi='" + textBox1.Text + "' AND Sifre='" + textBox2.Text + "'";
+            com.CommandText = "Select * From bilgiler Where  KullaniciAdi='" + txtb_giris_id.Text + "' AND Sifre='" + txtb_giris_pw.Text + "'";
             rd = com.ExecuteReader();
 
-            if (textBox1.Text != "" && textBox2.Text != "")
+            if (txtb_giris_id.Text != "" && txtb_giris_pw.Text != "")
             {
                 if (rd.Read())
                 {
                     if (Convert.ToInt32(rd["YetkiiD"]) == 1)
                     {
                         admin admn = new admin();
-                        textBox1.Clear();
-                        textBox2.Clear();
+                        txtb_giris_id.Clear();
+                        txtb_giris_pw.Clear();
                         admn.Show();
                     }
                     else if((Convert.ToInt32(rd["YetkiiD"]) == 2))
                     {
                         Kullanici kllnc = new Kullanici(Convert.ToInt32(rd["UseriD"]));
-                        textBox1.Clear();
-                        textBox2.Clear();
+                        txtb_giris_id.Clear();
+                        txtb_giris_pw.Clear();
                         kllnc.Show();
 
                     }
                     else
                     {
                         muhasebe mhsb = new muhasebe(Convert.ToInt32(rd["UseriD"]));
-                        textBox1.Clear();
-                        textBox2.Clear();
+                        txtb_giris_id.Clear();
+                        txtb_giris_pw.Clear();
                         mhsb.Show();
                     }
                 }

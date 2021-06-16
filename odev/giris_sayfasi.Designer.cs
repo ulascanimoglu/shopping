@@ -29,58 +29,58 @@ namespace odev
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lbl_giris_id = new System.Windows.Forms.Label();
+            this.lbl_giris_pw = new System.Windows.Forms.Label();
+            this.txtb_giris_id = new System.Windows.Forms.TextBox();
+            this.txtb_giris_pw = new System.Windows.Forms.TextBox();
             this.btn_kayit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_giris = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_giris_id
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(62, 194);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı : ";
+            this.lbl_giris_id.AutoSize = true;
+            this.lbl_giris_id.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.lbl_giris_id.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_giris_id.ForeColor = System.Drawing.Color.White;
+            this.lbl_giris_id.Location = new System.Drawing.Point(62, 194);
+            this.lbl_giris_id.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_giris_id.Name = "lbl_giris_id";
+            this.lbl_giris_id.Size = new System.Drawing.Size(130, 22);
+            this.lbl_giris_id.TabIndex = 0;
+            this.lbl_giris_id.Text = "Kullanıcı Adı : ";
             // 
-            // label2
+            // lbl_giris_pw
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(129, 263);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 26);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre : ";
+            this.lbl_giris_pw.AutoSize = true;
+            this.lbl_giris_pw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.lbl_giris_pw.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lbl_giris_pw.ForeColor = System.Drawing.Color.White;
+            this.lbl_giris_pw.Location = new System.Drawing.Point(129, 263);
+            this.lbl_giris_pw.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_giris_pw.Name = "lbl_giris_pw";
+            this.lbl_giris_pw.Size = new System.Drawing.Size(64, 22);
+            this.lbl_giris_pw.TabIndex = 1;
+            this.lbl_giris_pw.Text = "Şifre : ";
             // 
-            // textBox1
+            // txtb_giris_id
             // 
-            this.textBox1.Location = new System.Drawing.Point(239, 195);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 27);
-            this.textBox1.TabIndex = 3;
+            this.txtb_giris_id.Location = new System.Drawing.Point(239, 195);
+            this.txtb_giris_id.Margin = new System.Windows.Forms.Padding(4);
+            this.txtb_giris_id.Name = "txtb_giris_id";
+            this.txtb_giris_id.Size = new System.Drawing.Size(158, 23);
+            this.txtb_giris_id.TabIndex = 3;
             // 
-            // textBox2
+            // txtb_giris_pw
             // 
-            this.textBox2.Location = new System.Drawing.Point(239, 263);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 27);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtb_giris_pw.Location = new System.Drawing.Point(239, 263);
+            this.txtb_giris_pw.Margin = new System.Windows.Forms.Padding(4);
+            this.txtb_giris_pw.Name = "txtb_giris_pw";
+            this.txtb_giris_pw.Size = new System.Drawing.Size(158, 23);
+            this.txtb_giris_pw.TabIndex = 4;
+            this.txtb_giris_pw.UseSystemPasswordChar = true;
             // 
             // btn_kayit
             // 
@@ -96,19 +96,19 @@ namespace odev
             this.btn_kayit.UseVisualStyleBackColor = false;
             this.btn_kayit.Click += new System.EventHandler(this.btn_kayit_Click);
             // 
-            // button1
+            // btn_giris
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(277, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 62);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Giriş";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_giris.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(0)))), ((int)(((byte)(89)))));
+            this.btn_giris.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_giris.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_giris.ForeColor = System.Drawing.Color.White;
+            this.btn_giris.Location = new System.Drawing.Point(277, 325);
+            this.btn_giris.Name = "btn_giris";
+            this.btn_giris.Size = new System.Drawing.Size(121, 62);
+            this.btn_giris.TabIndex = 7;
+            this.btn_giris.Text = "Giriş";
+            this.btn_giris.UseVisualStyleBackColor = false;
+            this.btn_giris.Click += new System.EventHandler(this.btn_giris_Click);
             // 
             // pictureBox1
             // 
@@ -122,16 +122,16 @@ namespace odev
             // 
             // giris_sayfasi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(498, 507);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_giris);
             this.Controls.Add(this.btn_kayit);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtb_giris_pw);
+            this.Controls.Add(this.txtb_giris_id);
+            this.Controls.Add(this.lbl_giris_pw);
+            this.Controls.Add(this.lbl_giris_id);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -144,12 +144,12 @@ namespace odev
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbl_giris_id;
+        private System.Windows.Forms.Label lbl_giris_pw;
+        private System.Windows.Forms.TextBox txtb_giris_id;
+        private System.Windows.Forms.TextBox txtb_giris_pw;
         private System.Windows.Forms.Button btn_kayit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_giris;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
