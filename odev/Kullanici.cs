@@ -136,7 +136,7 @@ namespace odev
             }
 
        
-            string folderPath = "C:\\Excel\\";
+            string folderPath = "C:\\Rapor\\";
             if (!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
@@ -165,7 +165,8 @@ namespace odev
                 wb.Worksheet(1).Columns().AdjustToContents();
 
           
-                wb.SaveAs(folderPath + "DataGridViewExport.xlsx");
+                wb.SaveAs(folderPath + "İşlem Raporu.xlsx");
+                MessageBox.Show("Başarılı Bir Şekilde Rapor Oluşturuldu.");
             }
         }
 
