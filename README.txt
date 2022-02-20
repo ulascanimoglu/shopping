@@ -1,7 +1,8 @@
 # Works
 Yazılım Yapımı Market Otomasyonu
 
-  Projemizin işlevi; Visual Studio'da (2019 Community) C# ve MsSql (v18.9.1 2021) kullanılarak tasarlanıp bir market gereksinimlerinin ihtiyaca uygun şekilde gerçekleştirmesi.
+  Projemizin işlevi; Visual Studio'da (2019 Community) C# ve MsSql (v18.9.1 2021) 
+  kullanılarak tasarlanıp bir market gereksinimlerinin ihtiyaca uygun şekilde gerçekleştirmesi.
 
 
 İşlevlerimiz: 
